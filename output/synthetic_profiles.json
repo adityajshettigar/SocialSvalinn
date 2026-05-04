@@ -1,0 +1,402 @@
+[
+  {
+    "id": "EMP-038",
+    "name": "Sneha Gupta",
+    "department": "Sales",
+    "title": "Account Executive",
+    "archetype": "methodical",
+    "text": "My professional approach is grounded in discipline and attention to detail. I work best within clearly defined frameworks, and I take instructions from senior management very seriously. In enterprise sales, I have consistently delivered results by following standard operating procedures to the letter."
+  },
+  {
+    "id": "EMP-039",
+    "name": "Deepak Das",
+    "department": "Sales",
+    "title": "Business Development Lead",
+    "archetype": "social",
+    "text": "I am a people-first professional. In my 4 years in enterprise sales, everything I have accomplished has been through collaboration and strong relationships. I genuinely enjoy helping colleagues and making sure everyone on the team feels supported. When people I trust recommend something, I take it seriously."
+  },
+  {
+    "id": "EMP-010",
+    "name": "Ritu Patel",
+    "department": "HR",
+    "title": "People Operations Manager",
+    "archetype": "methodical",
+    "text": "I have spent the past 8 years building structured, process-driven workflows in organizational culture. I believe strongly in following established procedures and reporting lines. Compliance, accuracy, and accountability are the values I bring to every project. I always defer to leadership directives and make sure every action is properly documented and approved before execution."
+  },
+  {
+    "id": "EMP-002",
+    "name": "Kavya Mishra",
+    "department": "Finance",
+    "title": "Budget Manager",
+    "archetype": "methodical",
+    "text": "My professional approach is grounded in discipline and attention to detail. I work best within clearly defined frameworks, and I take instructions from senior management very seriously. In regulatory compliance, I have consistently delivered results by following standard operating procedures to the letter."
+  },
+  {
+    "id": "EMP-044",
+    "name": "Shreya Bose",
+    "department": "Operations",
+    "title": "Process Engineer",
+    "archetype": "curious",
+    "text": "I have always been drawn to new ideas and cross-disciplinary thinking. My work in logistics has taken me into some unexpected but fascinating territories. I enjoy engaging with new concepts and perspectives, especially when they challenge my existing assumptions. I am always willing to explore unconventional approaches."
+  },
+  {
+    "id": "EMP-035",
+    "name": "Swati Iyer",
+    "department": "Sales",
+    "title": "Account Executive",
+    "archetype": "curious",
+    "text": "Intellectual curiosity drives most of what I do professionally. In account management, I actively seek out new tools, methodologies, and thought leaders. I find it easy to build rapport with people from very different backgrounds, and I value generosity of knowledge above almost everything else."
+  },
+  {
+    "id": "EMP-048",
+    "name": "Manish Verma",
+    "department": "Operations",
+    "title": "Operations Manager",
+    "archetype": "social",
+    "text": "I am a people-first professional. In my 10 years in vendor management, everything I have accomplished has been through collaboration and strong relationships. I genuinely enjoy helping colleagues and making sure everyone on the team feels supported. When people I trust recommend something, I take it seriously."
+  },
+  {
+    "id": "EMP-025",
+    "name": "Karan Joshi",
+    "department": "Engineering",
+    "title": "Tech Lead",
+    "archetype": "curious",
+    "text": "Intellectual curiosity drives most of what I do professionally. In cloud infrastructure, I actively seek out new tools, methodologies, and thought leaders. I find it easy to build rapport with people from very different backgrounds, and I value generosity of knowledge above almost everything else."
+  },
+  {
+    "id": "EMP-045",
+    "name": "Suresh Sharma",
+    "department": "Operations",
+    "title": "Process Engineer",
+    "archetype": "social",
+    "text": "I am a people-first professional. In my 8 years in vendor management, everything I have accomplished has been through collaboration and strong relationships. I genuinely enjoy helping colleagues and making sure everyone on the team feels supported. When people I trust recommend something, I take it seriously."
+  },
+  {
+    "id": "EMP-016",
+    "name": "Divya Pillai",
+    "department": "HR",
+    "title": "People Operations Manager",
+    "archetype": "reactive",
+    "text": "Working in workforce planning means constantly adapting to last-minute changes and high-pressure deadlines. I have learned to act fast when situations escalate. If something is urgent or critical, I prioritize it immediately without waiting for things to get worse. I know how quickly situations can deteriorate if you do not respond in time."
+  },
+  {
+    "id": "EMP-022",
+    "name": "Vivek Singh",
+    "department": "Engineering",
+    "title": "Solutions Architect",
+    "archetype": "methodical",
+    "text": "I have spent the past 17 years building structured, process-driven workflows in cloud infrastructure. I believe strongly in following established procedures and reporting lines. Compliance, accuracy, and accountability are the values I bring to every project. I always defer to leadership directives and make sure every action is properly documented and approved before execution."
+  },
+  {
+    "id": "EMP-029",
+    "name": "Rahul Pandey",
+    "department": "Legal",
+    "title": "Legal Counsel",
+    "archetype": "reactive",
+    "text": "Working in contract review means constantly adapting to last-minute changes and high-pressure deadlines. I have learned to act fast when situations escalate. If something is urgent or critical, I prioritize it immediately without waiting for things to get worse. I know how quickly situations can deteriorate if you do not respond in time."
+  },
+  {
+    "id": "EMP-005",
+    "name": "Karan Shah",
+    "department": "Finance",
+    "title": "Senior Accountant",
+    "archetype": "reactive",
+    "text": "Over 7 years in financial risk, I have handled more crisis situations than I can count. My instinct is to respond immediately when I get a high-priority message. Hesitation in critical moments has real consequences, and I have always taken that seriously."
+  },
+  {
+    "id": "EMP-001",
+    "name": "Arjun Verma",
+    "department": "Finance",
+    "title": "Budget Manager",
+    "archetype": "reactive",
+    "text": "Working in budget management means constantly adapting to last-minute changes and high-pressure deadlines. I have learned to act fast when situations escalate. If something is urgent or critical, I prioritize it immediately without waiting for things to get worse. I know how quickly situations can deteriorate if you do not respond in time."
+  },
+  {
+    "id": "EMP-027",
+    "name": "Sneha Mehta",
+    "department": "Legal",
+    "title": "Data Protection Lead",
+    "archetype": "methodical",
+    "text": "I have spent the past 7 years building structured, process-driven workflows in corporate compliance. I believe strongly in following established procedures and reporting lines. Compliance, accuracy, and accountability are the values I bring to every project. I always defer to leadership directives and make sure every action is properly documented and approved before execution."
+  },
+  {
+    "id": "EMP-032",
+    "name": "Shreya Verma",
+    "department": "Legal",
+    "title": "Data Protection Lead",
+    "archetype": "methodical",
+    "text": "I have spent the past 9 years building structured, process-driven workflows in corporate compliance. I believe strongly in following established procedures and reporting lines. Compliance, accuracy, and accountability are the values I bring to every project. I always defer to leadership directives and make sure every action is properly documented and approved before execution."
+  },
+  {
+    "id": "EMP-034",
+    "name": "Deepak Nair",
+    "department": "Legal",
+    "title": "Legal Counsel",
+    "archetype": "reactive",
+    "text": "Working in corporate compliance means constantly adapting to last-minute changes and high-pressure deadlines. I have learned to act fast when situations escalate. If something is urgent or critical, I prioritize it immediately without waiting for things to get worse. I know how quickly situations can deteriorate if you do not respond in time."
+  },
+  {
+    "id": "EMP-006",
+    "name": "Nikhil Sharma",
+    "department": "Finance",
+    "title": "Financial Analyst",
+    "archetype": "curious",
+    "text": "I have always been drawn to new ideas and cross-disciplinary thinking. My work in auditing has taken me into some unexpected but fascinating territories. I enjoy engaging with new concepts and perspectives, especially when they challenge my existing assumptions. I am always willing to explore unconventional approaches."
+  },
+  {
+    "id": "EMP-013",
+    "name": "Shreya Patel",
+    "department": "HR",
+    "title": "People Operations Manager",
+    "archetype": "reactive",
+    "text": "Working in talent acquisition means constantly adapting to last-minute changes and high-pressure deadlines. I have learned to act fast when situations escalate. If something is urgent or critical, I prioritize it immediately without waiting for things to get worse. I know how quickly situations can deteriorate if you do not respond in time."
+  },
+  {
+    "id": "EMP-007",
+    "name": "Rohan Gupta",
+    "department": "Finance",
+    "title": "Financial Analyst",
+    "archetype": "social",
+    "text": "Building community is at the heart of what I do in regulatory compliance. I care deeply about what my peers and mentors think, and I always try to give back to the people who have helped me. I believe that trust is the foundation of all professional relationships."
+  },
+  {
+    "id": "EMP-009",
+    "name": "Shreya Mehta",
+    "department": "Finance",
+    "title": "Senior Accountant",
+    "archetype": "methodical",
+    "text": "I have spent the past 7 years building structured, process-driven workflows in budget management. I believe strongly in following established procedures and reporting lines. Compliance, accuracy, and accountability are the values I bring to every project. I always defer to leadership directives and make sure every action is properly documented and approved before execution."
+  },
+  {
+    "id": "EMP-036",
+    "name": "Kavya Mishra",
+    "department": "Sales",
+    "title": "Sales Manager",
+    "archetype": "reactive",
+    "text": "Working in revenue growth means constantly adapting to last-minute changes and high-pressure deadlines. I have learned to act fast when situations escalate. If something is urgent or critical, I prioritize it immediately without waiting for things to get worse. I know how quickly situations can deteriorate if you do not respond in time."
+  },
+  {
+    "id": "EMP-024",
+    "name": "Rahul Verma",
+    "department": "Engineering",
+    "title": "Tech Lead",
+    "archetype": "social",
+    "text": "I am a people-first professional. In my 12 years in DevOps, everything I have accomplished has been through collaboration and strong relationships. I genuinely enjoy helping colleagues and making sure everyone on the team feels supported. When people I trust recommend something, I take it seriously."
+  },
+  {
+    "id": "EMP-042",
+    "name": "Neha Iyer",
+    "department": "Sales",
+    "title": "Business Development Lead",
+    "archetype": "social",
+    "text": "I am a people-first professional. In my 16 years in client relationships, everything I have accomplished has been through collaboration and strong relationships. I genuinely enjoy helping colleagues and making sure everyone on the team feels supported. When people I trust recommend something, I take it seriously."
+  },
+  {
+    "id": "EMP-004",
+    "name": "Pooja Bose",
+    "department": "Finance",
+    "title": "Financial Analyst",
+    "archetype": "curious",
+    "text": "Intellectual curiosity drives most of what I do professionally. In financial risk, I actively seek out new tools, methodologies, and thought leaders. I find it easy to build rapport with people from very different backgrounds, and I value generosity of knowledge above almost everything else."
+  },
+  {
+    "id": "EMP-031",
+    "name": "Kavya Shah",
+    "department": "Legal",
+    "title": "Legal Counsel",
+    "archetype": "reactive",
+    "text": "Over 10 years in contract review, I have handled more crisis situations than I can count. My instinct is to respond immediately when I get a high-priority message. Hesitation in critical moments has real consequences, and I have always taken that seriously."
+  },
+  {
+    "id": "EMP-047",
+    "name": "Ravi Verma",
+    "department": "Operations",
+    "title": "Process Engineer",
+    "archetype": "social",
+    "text": "I am a people-first professional. In my 13 years in process optimization, everything I have accomplished has been through collaboration and strong relationships. I genuinely enjoy helping colleagues and making sure everyone on the team feels supported. When people I trust recommend something, I take it seriously."
+  },
+  {
+    "id": "EMP-023",
+    "name": "Arjun Rao",
+    "department": "Engineering",
+    "title": "DevOps Engineer",
+    "archetype": "social",
+    "text": "Building community is at the heart of what I do in software development. I care deeply about what my peers and mentors think, and I always try to give back to the people who have helped me. I believe that trust is the foundation of all professional relationships."
+  },
+  {
+    "id": "EMP-033",
+    "name": "Sneha Das",
+    "department": "Legal",
+    "title": "Legal Counsel",
+    "archetype": "reactive",
+    "text": "Over 9 years in contract review, I have handled more crisis situations than I can count. My instinct is to respond immediately when I get a high-priority message. Hesitation in critical moments has real consequences, and I have always taken that seriously."
+  },
+  {
+    "id": "EMP-017",
+    "name": "Manish Sharma",
+    "department": "HR",
+    "title": "HR Business Partner",
+    "archetype": "curious",
+    "text": "I have always been drawn to new ideas and cross-disciplinary thinking. My work in employee relations has taken me into some unexpected but fascinating territories. I enjoy engaging with new concepts and perspectives, especially when they challenge my existing assumptions. I am always willing to explore unconventional approaches."
+  },
+  {
+    "id": "EMP-026",
+    "name": "Swati Nair",
+    "department": "Engineering",
+    "title": "Solutions Architect",
+    "archetype": "methodical",
+    "text": "My professional approach is grounded in discipline and attention to detail. I work best within clearly defined frameworks, and I take instructions from senior management very seriously. In DevOps, I have consistently delivered results by following standard operating procedures to the letter."
+  },
+  {
+    "id": "EMP-037",
+    "name": "Anjali Joshi",
+    "department": "Sales",
+    "title": "Account Executive",
+    "archetype": "social",
+    "text": "Building community is at the heart of what I do in account management. I care deeply about what my peers and mentors think, and I always try to give back to the people who have helped me. I believe that trust is the foundation of all professional relationships."
+  },
+  {
+    "id": "EMP-011",
+    "name": "Swati Verma",
+    "department": "HR",
+    "title": "People Operations Manager",
+    "archetype": "methodical",
+    "text": "My professional approach is grounded in discipline and attention to detail. I work best within clearly defined frameworks, and I take instructions from senior management very seriously. In employee relations, I have consistently delivered results by following standard operating procedures to the letter."
+  },
+  {
+    "id": "EMP-012",
+    "name": "Amit Mishra",
+    "department": "HR",
+    "title": "HR Business Partner",
+    "archetype": "reactive",
+    "text": "Working in workforce planning means constantly adapting to last-minute changes and high-pressure deadlines. I have learned to act fast when situations escalate. If something is urgent or critical, I prioritize it immediately without waiting for things to get worse. I know how quickly situations can deteriorate if you do not respond in time."
+  },
+  {
+    "id": "EMP-015",
+    "name": "Priya Singh",
+    "department": "HR",
+    "title": "Talent Acquisition Lead",
+    "archetype": "curious",
+    "text": "I have always been drawn to new ideas and cross-disciplinary thinking. My work in workforce planning has taken me into some unexpected but fascinating territories. I enjoy engaging with new concepts and perspectives, especially when they challenge my existing assumptions. I am always willing to explore unconventional approaches."
+  },
+  {
+    "id": "EMP-040",
+    "name": "Swati Singh",
+    "department": "Sales",
+    "title": "Sales Manager",
+    "archetype": "social",
+    "text": "I am a people-first professional. In my 11 years in account management, everything I have accomplished has been through collaboration and strong relationships. I genuinely enjoy helping colleagues and making sure everyone on the team feels supported. When people I trust recommend something, I take it seriously."
+  },
+  {
+    "id": "EMP-020",
+    "name": "Ritu Sharma",
+    "department": "Engineering",
+    "title": "Tech Lead",
+    "archetype": "curious",
+    "text": "Intellectual curiosity drives most of what I do professionally. In systems architecture, I actively seek out new tools, methodologies, and thought leaders. I find it easy to build rapport with people from very different backgrounds, and I value generosity of knowledge above almost everything else."
+  },
+  {
+    "id": "EMP-028",
+    "name": "Aditya Joshi",
+    "department": "Legal",
+    "title": "Legal Counsel",
+    "archetype": "methodical",
+    "text": "My professional approach is grounded in discipline and attention to detail. I work best within clearly defined frameworks, and I take instructions from senior management very seriously. In regulatory affairs, I have consistently delivered results by following standard operating procedures to the letter."
+  },
+  {
+    "id": "EMP-030",
+    "name": "Kavya Das",
+    "department": "Legal",
+    "title": "Data Protection Lead",
+    "archetype": "methodical",
+    "text": "I have spent the past 7 years building structured, process-driven workflows in data privacy law. I believe strongly in following established procedures and reporting lines. Compliance, accuracy, and accountability are the values I bring to every project. I always defer to leadership directives and make sure every action is properly documented and approved before execution."
+  },
+  {
+    "id": "EMP-021",
+    "name": "Swati Rao",
+    "department": "Engineering",
+    "title": "DevOps Engineer",
+    "archetype": "methodical",
+    "text": "My professional approach is grounded in discipline and attention to detail. I work best within clearly defined frameworks, and I take instructions from senior management very seriously. In systems architecture, I have consistently delivered results by following standard operating procedures to the letter."
+  },
+  {
+    "id": "EMP-046",
+    "name": "Manish Pandey",
+    "department": "Operations",
+    "title": "Supply Chain Analyst",
+    "archetype": "methodical",
+    "text": "My professional approach is grounded in discipline and attention to detail. I work best within clearly defined frameworks, and I take instructions from senior management very seriously. In vendor management, I have consistently delivered results by following standard operating procedures to the letter."
+  },
+  {
+    "id": "EMP-043",
+    "name": "Ritu Das",
+    "department": "Operations",
+    "title": "Operations Manager",
+    "archetype": "reactive",
+    "text": "Working in supply chain means constantly adapting to last-minute changes and high-pressure deadlines. I have learned to act fast when situations escalate. If something is urgent or critical, I prioritize it immediately without waiting for things to get worse. I know how quickly situations can deteriorate if you do not respond in time."
+  },
+  {
+    "id": "EMP-050",
+    "name": "Karan Nair",
+    "department": "Operations",
+    "title": "Supply Chain Analyst",
+    "archetype": "social",
+    "text": "I am a people-first professional. In my 10 years in supply chain, everything I have accomplished has been through collaboration and strong relationships. I genuinely enjoy helping colleagues and making sure everyone on the team feels supported. When people I trust recommend something, I take it seriously."
+  },
+  {
+    "id": "EMP-018",
+    "name": "Vivek Pillai",
+    "department": "HR",
+    "title": "HR Business Partner",
+    "archetype": "social",
+    "text": "I am a people-first professional. In my 16 years in workforce planning, everything I have accomplished has been through collaboration and strong relationships. I genuinely enjoy helping colleagues and making sure everyone on the team feels supported. When people I trust recommend something, I take it seriously."
+  },
+  {
+    "id": "EMP-008",
+    "name": "Ritu Singh",
+    "department": "Finance",
+    "title": "Senior Accountant",
+    "archetype": "methodical",
+    "text": "My professional approach is grounded in discipline and attention to detail. I work best within clearly defined frameworks, and I take instructions from senior management very seriously. In financial risk, I have consistently delivered results by following standard operating procedures to the letter."
+  },
+  {
+    "id": "EMP-019",
+    "name": "Neha Reddy",
+    "department": "Engineering",
+    "title": "DevOps Engineer",
+    "archetype": "curious",
+    "text": "I have always been drawn to new ideas and cross-disciplinary thinking. My work in cloud infrastructure has taken me into some unexpected but fascinating territories. I enjoy engaging with new concepts and perspectives, especially when they challenge my existing assumptions. I am always willing to explore unconventional approaches."
+  },
+  {
+    "id": "EMP-041",
+    "name": "Meera Shah",
+    "department": "Sales",
+    "title": "Business Development Lead",
+    "archetype": "methodical",
+    "text": "My professional approach is grounded in discipline and attention to detail. I work best within clearly defined frameworks, and I take instructions from senior management very seriously. In account management, I have consistently delivered results by following standard operating procedures to the letter."
+  },
+  {
+    "id": "EMP-014",
+    "name": "Arjun Patel",
+    "department": "HR",
+    "title": "HR Business Partner",
+    "archetype": "methodical",
+    "text": "I have spent the past 13 years building structured, process-driven workflows in workforce planning. I believe strongly in following established procedures and reporting lines. Compliance, accuracy, and accountability are the values I bring to every project. I always defer to leadership directives and make sure every action is properly documented and approved before execution."
+  },
+  {
+    "id": "EMP-003",
+    "name": "Priya Mishra",
+    "department": "Finance",
+    "title": "Budget Manager",
+    "archetype": "curious",
+    "text": "I have always been drawn to new ideas and cross-disciplinary thinking. My work in financial risk has taken me into some unexpected but fascinating territories. I enjoy engaging with new concepts and perspectives, especially when they challenge my existing assumptions. I am always willing to explore unconventional approaches."
+  },
+  {
+    "id": "EMP-049",
+    "name": "Vivek Pillai",
+    "department": "Operations",
+    "title": "Process Engineer",
+    "archetype": "methodical",
+    "text": "I have spent the past 6 years building structured, process-driven workflows in logistics. I believe strongly in following established procedures and reporting lines. Compliance, accuracy, and accountability are the values I bring to every project. I always defer to leadership directives and make sure every action is properly documented and approved before execution."
+  }
+]
