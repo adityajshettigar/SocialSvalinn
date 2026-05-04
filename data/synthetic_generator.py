@@ -14,18 +14,24 @@ import random
 import json
 import os
 from config import DEPARTMENTS
+from dotenv import load_dotenv
+load_dotenv()
+
+try:
+    from groq import Groq
+    # Initialize Groq client. It automatically looks for the GROQ_API_KEY environment variable.
+    groq_client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+except ImportError:
+    print("[DataGen] WARNING: 'groq' library not found. Run 'pip install groq'. Falling back to static templates.")
+    groq_client = None
+except Exception as e:
+    print(f"[DataGen] WARNING: Groq client failed to initialize: {e}. Falling back to static templates.")
+    groq_client = None
 
 # ------------------------------------------------------------------
-# Text templates per personality archetype.
-# Each archetype maps loosely to dominant Big Five traits.
-# These are written to reflect how people with those traits
-# actually communicate in professional writing.
+# Text templates per personality archetype (Used as Fallback)
 # ------------------------------------------------------------------
-
 PROFILE_TEMPLATES = {
-
-    # High Conscientiousness + Low Neuroticism
-    # Methodical, rule-oriented, responds to Authority and Scarcity
     "methodical": [
         "I have spent the past {years} years building structured, process-driven workflows "
         "in {domain}. I believe strongly in following established procedures and reporting "
@@ -38,9 +44,6 @@ PROFILE_TEMPLATES = {
         "very seriously. In {domain}, I have consistently delivered results by following "
         "standard operating procedures to the letter.",
     ],
-
-    # High Neuroticism + Low Conscientiousness
-    # Stress-reactive, responds strongly to Urgency and Scarcity
     "reactive": [
         "Working in {domain} means constantly adapting to last-minute changes and high-pressure "
         "deadlines. I have learned to act fast when situations escalate. If something is urgent "
@@ -51,9 +54,6 @@ PROFILE_TEMPLATES = {
         "My instinct is to respond immediately when I get a high-priority message. Hesitation "
         "in critical moments has real consequences, and I have always taken that seriously.",
     ],
-
-    # High Extraversion + High Agreeableness
-    # Social, trusting, responds to Social Proof, Liking, Reciprocity
     "social": [
         "I am a people-first professional. In my {years} years in {domain}, everything I have "
         "accomplished has been through collaboration and strong relationships. I genuinely enjoy "
@@ -64,9 +64,6 @@ PROFILE_TEMPLATES = {
         "what my peers and mentors think, and I always try to give back to the people who "
         "have helped me. I believe that trust is the foundation of all professional relationships.",
     ],
-
-    # High Openness + High Agreeableness
-    # Curious, collaborative, responds to Reciprocity and Liking
     "curious": [
         "I have always been drawn to new ideas and cross-disciplinary thinking. My work in "
         "{domain} has taken me into some unexpected but fascinating territories. I enjoy "
@@ -111,28 +108,45 @@ LAST_NAMES = [
     "Mishra", "Rao", "Pillai", "Bose", "Das", "Pandey",
 ]
 
+def generate_dynamic_bio(archetype: str, title: str, domain: str, years: int) -> str:
+    """Uses Groq LLM to generate highly varied, nuanced professional bios."""
+    if not groq_client:
+        return random.choice(PROFILE_TEMPLATES[archetype]).format(years=years, domain=domain)
+
+    prompt = f"""
+    Write a realistic, 3 to 4 sentence professional LinkedIn summary for a {title} with {years} years of experience working in {domain}. 
+    Their underlying personality archetype is '{archetype}'. 
+    Make the language subtle, natural, and professional. Do NOT explicitly use the word '{archetype}'.
+    Do not use introductory phrases like "Here is the summary". Only output the summary text itself.
+    """
+    try:
+        response = groq_client.chat.completions.create(
+            model="llama-3.1-8b-instant",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=150,
+            temperature=0.8
+        )
+        return response.choices[0].message.content.strip().replace('"', '')
+    except Exception as e:
+        print(f"[DataGen] Groq generation failed, falling back to templates: {e}")
+        return random.choice(PROFILE_TEMPLATES[archetype]).format(years=years, domain=domain)
+
 
 def generate_profile(employee_id: int, department: str = None) -> dict:
     """
     Generates a single synthetic employee profile.
-
-    Returns a dict with:
-    - id, name, department, title
-    - text: the public-facing professional bio used for NLP analysis
-    - archetype: the personality template used (ground truth for validation)
     """
     if department is None:
         department = random.choice(DEPARTMENTS)
 
     archetype = random.choice(list(PROFILE_TEMPLATES.keys()))
-    template = random.choice(PROFILE_TEMPLATES[archetype])
     domain = random.choice(DOMAINS[department])
     years = random.randint(3, 18)
     title = random.choice(JOB_TITLES[department])
     name = f"{random.choice(FIRST_NAMES)} {random.choice(LAST_NAMES)}"
 
-    # Fill in the template placeholders
-    text = template.format(years=years, domain=domain)
+    # Generate the bio dynamically using Groq (or fallback template)
+    text = generate_dynamic_bio(archetype, title, domain, years)
 
     return {
         "id": f"EMP-{str(employee_id).zfill(3)}",
@@ -146,15 +160,7 @@ def generate_profile(employee_id: int, department: str = None) -> dict:
 
 def generate_organization(num_employees: int = 30, save_path: str = None) -> list:
     """
-    Generates a full synthetic organization with employees
-    distributed across departments.
-
-    Args:
-        num_employees: Total number of employee profiles to generate.
-        save_path: Optional path to save profiles as JSON.
-
-    Returns:
-        List of employee profile dicts.
+    Generates a full synthetic organization.
     """
     profiles = []
     employees_per_dept = num_employees // len(DEPARTMENTS)
@@ -180,9 +186,9 @@ def generate_organization(num_employees: int = 30, save_path: str = None) -> lis
 
 
 if __name__ == "__main__":
-    # Quick test: generate and preview 5 profiles
-    profiles = generate_organization(num_employees=5)
+    print("[DataGen] Testing profile generation (with Groq if configured)...")
+    profiles = generate_organization(num_employees=3)
     for p in profiles:
         print(f"\n{p['id']} | {p['name']} | {p['department']} | {p['title']}")
         print(f"Archetype: {p['archetype']}")
-        print(f"Text: {p['text'][:120]}...")
+        print(f"Text: {p['text']}")

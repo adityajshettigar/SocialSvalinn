@@ -130,16 +130,36 @@ def score_profile(profile: dict) -> dict:
 
 def score_organization(profiles: list) -> list:
     """
-    Scores all profiles in the organization.
-
-    Args:
-        profiles: List of profile dicts with ocean_scores populated.
-
-    Returns:
-        Same list with susceptibility data added to each profile.
+    Scores all profiles, applying cohort-based normalization to stretch variance
+    and highlight true organizational outliers.
     """
+    # Step 1: Calculate raw scores for everyone
     for profile in profiles:
-        score_profile(profile)
+        ocean = profile.get("ocean_scores", {t: 0.5 for t in OCEAN_TRAITS})
+        profile["raw_susceptibility"] = compute_susceptibility(ocean)
+
+    # Step 2: Find the min and max raw scores across the cohort for each principle
+    mins = {p: 1.0 for p in CIALDINI_PRINCIPLES}
+    maxs = {p: 0.0 for p in CIALDINI_PRINCIPLES}
+    
+    for p in profiles:
+        for principle, raw_score in p["raw_susceptibility"].items():
+            if raw_score < mins[principle]: mins[principle] = raw_score
+            if raw_score > maxs[principle]: maxs[principle] = raw_score
+
+    # Step 3: Apply Min-Max scaling to stretch scores from 0.0 to 1.0
+    for profile in profiles:
+        scaled_scores = {}
+        for principle, raw in profile["raw_susceptibility"].items():
+            denominator = maxs[principle] - mins[principle]
+            # Avoid division by zero if everyone scores exactly the same
+            scaled = (raw - mins[principle]) / denominator if denominator > 0 else 0.5
+            scaled_scores[principle] = round(scaled, 4)
+            
+        profile["susceptibility_scores"] = scaled_scores
+        profile["risk_tiers"] = {p: classify_risk(s) for p, s in scaled_scores.items()}
+        profile["top_vulnerabilities"] = get_top_vulnerabilities(scaled_scores)
+        profile["overall_risk_score"] = round(np.mean(list(scaled_scores.values())), 4)
 
     return profiles
 

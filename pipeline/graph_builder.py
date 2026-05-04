@@ -5,7 +5,7 @@
 # Graph structure:
 #   - Nodes: individual employees + department nodes
 #   - Edges: employee → department (membership)
-#             employee → principle (if HIGH or MEDIUM risk)
+#             employee → principle (if HIGH risk only)
 #   - Node attributes: risk scores, OCEAN values, department
 #   - Edge attributes: susceptibility score, risk tier
 #
@@ -28,7 +28,7 @@ def build_vulnerability_graph(profiles: list) -> nx.DiGraph:
 
     Edge types:
         - employee → department: "member_of"
-        - employee → principle: "susceptible_to" (only for HIGH/MEDIUM risk)
+        - employee → principle: "susceptible_to" (only for HIGH risk)
 
     Args:
         profiles: Fully scored list of profile dicts.
@@ -82,13 +82,14 @@ def build_vulnerability_graph(profiles: list) -> nx.DiGraph:
         # Employee → Department edge
         G.add_edge(emp_id, dept, edge_type="member_of")
 
-        # Employee → Principle edges (only for HIGH and MEDIUM risk)
+        # Employee → Principle edges (Filtered for Extremes - HIGH risk only)
         sus_scores = profile.get("susceptibility_scores", {})
         risk_tiers = profile.get("risk_tiers", {})
 
         for principle, score in sus_scores.items():
             tier = risk_tiers.get(principle, "LOW")
-            if tier in ("HIGH", "MEDIUM"):
+            # Only draw edges for HIGH risk to eliminate the visual hairball
+            if tier == "HIGH":
                 G.add_edge(
                     emp_id,
                     principle,
