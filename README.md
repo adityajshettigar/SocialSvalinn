@@ -1,208 +1,174 @@
-# Behavioral NLP Framework for Predicting Social Engineering Susceptibility
+# SocialSvalinn
+**Behavioral NLP Framework for Predicting Social Engineering Susceptibility**
 
-A research prototype that analyzes publicly available text from organizational members,
-infers their personality traits using the Big Five (OCEAN) model, and maps those traits
-to susceptibility scores for each of Cialdini's six principles of persuasion.
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![HuggingFace Models](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Models-orange)](https://huggingface.co/Minej/bert-base-personality)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/adityajshettigar/SocialSvalinn)
+
+> **SocialSvalinn** bridges the gap between psycholinguistics and defensive cybersecurity. Instead of reacting to phishing clicks, this framework proactively maps human attack surfaces by analyzing public text, inferring Big Five (OCEAN) personality traits, and calculating target susceptibility to Cialdini's Six Principles of Persuasion.
 
 ---
 
-## Project Structure
+##  Table of Contents
+- [Executive Summary](#-executive-summary)
+- [System Architecture](#-system-architecture)
+- [Installation & Setup](#-installation--setup)
+- [Usage Guide](#-usage-guide)
+- [Output & Telemetry](#-output--telemetry)
+- [Theoretical Foundation](#-theoretical-foundation)
+- [Extending the Framework (OSINT Integration)](#-extending-the-framework-osint-integration)
+- [Ethical & Compliance Guardrails](#-ethical--compliance-guardrails)
+
+---
+
+## Executive Summary
+
+Traditional Security Awareness Training (SAT) treats all employees as identical targets. **SocialSvalinn** recognizes that human vulnerability is highly individualized. By analyzing behavioral language inputs (via OSINT or internal communications), the pipeline generates a dynamic organizational risk topology. 
+
+**Key Capabilities:**
+* **Transformer-Based NLP:** Utilizes HuggingFace `Minej/bert-base-personality` for deep semantic trait extraction.
+* **Heuristic Fallback Engine:** SpaCy-powered linguistic feature extraction ensures the pipeline runs even in air-gapped or offline environments.
+* **Cohort Min-Max Scaling:** Automatically isolates the "weakest link" in an organization, preventing extreme risk vectors from being hidden behind average behavioral scores.
+* **Interactive Threat Telemetry:** Outputs structured JSON and NetworkX graphs ready for SIEM ingestion or Next.js UI dashboards.
+
+---
+
+## System Architecture
 
 ```
-psyber_trace/
-├── main.py                         ← Entry point — run this
-├── config.py                       ← All constants, thresholds, mappings
-├── requirements.txt                ← Python dependencies
-│
+Raw Text Input (OSINT / Synthetic)
+      │
+      ▼
+[  Preprocessor Module ]  ─────▶ Cleans text, extracts linguistic features via SpaCy
+      │
+      ▼
+[  Inference Engine ]     ─────▶ HuggingFace BERT Transformer (OCEAN trait scoring)
+      │
+      ▼
+[  Susceptibility Scorer] ─────▶ Maps OCEAN traits to Cialdini Principles + Cohort Scaling
+      │
+      ▼
+[  Graph Builder ]        ─────▶ Generates NetworkX Vulnerability Topology
+      │
+      ▼
+[  Threat Telemetry ]     ─────▶ Exports CSV, JSON, Heatmaps, and Threat Network Visuals
+```
+
+### Directory Structure
+```text
+SocialSvalinn/
+├── main.py                     # Primary pipeline execution
+├── config.py                   # Constants, matrix mappings, risk thresholds
+├── requirements.txt            # Python dependencies
+├── .env.example                # API key template (for synthetic generation)
 ├── data/
-│   ├── __init__.py
-│   └── synthetic_generator.py      ← Generates synthetic employee profiles
-│
+│   └── synthetic_generator.py  # LLM-powered synthetic employee generation
 ├── pipeline/
-│   ├── __init__.py
-│   ├── preprocessor.py             ← Text cleaning and linguistic feature extraction
-│   ├── personality_inference.py    ← OCEAN trait inference (transformer + fallback)
-│   ├── susceptibility_scorer.py    ← Maps OCEAN to Cialdini susceptibility scores
-│   └── graph_builder.py            ← Builds the NetworkX vulnerability graph
-│
-├── visualization/
-│   ├── __init__.py
-│   └── visualizer.py               ← All charts, heatmaps, network graphs, CSV export
-│
-└── output/                         ← All results saved here (created at runtime)
-    ├── susceptibility_heatmap.png
-    ├── vulnerability_graph.png
-    ├── top_risk_individuals.png
-    ├── risk_report.csv
-    ├── graph.json
-    └── synthetic_profiles.json
+│   ├── preprocessor.py         # Text cleaning and POS tagging
+│   ├── personality_inference.py# HuggingFace & Fallback inference engines
+│   ├── susceptibility_scorer.py# Min-Max scaling and risk categorization
+│   └── graph_builder.py        # Network graph construction
+└── visualization/
+    └── visualizer.py           # Matplotlib & Seaborn chart generation
 ```
 
 ---
 
-## Setup Instructions
+##  Installation & Setup
 
-### Step 1 — Clone or copy the project folder
-
+**1. Clone the repository**
 ```bash
-cd psyber_trace
+git clone https://github.com/adityajshettigar/SocialSvalinn.git
+cd SocialSvalinn
 ```
 
-### Step 2 — Create a virtual environment (recommended)
-
+**2. Initialize the Virtual Environment**
 ```bash
 python -m venv venv
-
-# On Windows:
-venv\Scripts\activate
-
-# On Mac/Linux:
-source venv/bin/activate
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
 ```
 
-### Step 3 — Install dependencies
-
+**3. Install Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## How to Run
-
-### Option A — Fast mode (no internet, no model download)
-Uses rule-based linguistic heuristics for personality inference.
-Runs in under 5 seconds. Good for testing the pipeline.
-
+**4. Environment Variables (Required for Synthetic Mode)**
+Copy the environment template and add your Groq API key (used for generating hyper-realistic synthetic employee text).
 ```bash
-python main.py --no-transformer
+cp .env.example .env
+# Edit .env and add: GROQ_API_KEY="gsk_your_api_key_here"
 ```
 
-### Option B — Full transformer mode (requires internet, first run ~2-3 min)
-Downloads and uses the `Minej/bert-base-personality` BERT model from HuggingFace.
-Produces more accurate OCEAN scores. Model is cached after first download.
+---
 
+##  Usage Guide
+
+SocialSvalinn operates as a CLI tool. All generated reports and graphs are output to the `/output` directory.
+
+### Full NLP Mode (Recommended)
+Downloads and utilizes the HuggingFace Transformer model for high-fidelity psychological inference. *(Note: First run will download a ~438MB model to cache).*
 ```bash
-python main.py
+python main.py --employees 30
 ```
 
-### Controlling the number of employees
-
+### Heuristic / Air-Gapped Mode
+Bypasses the Transformer model and uses rule-based SpaCy linguistic feature extraction. Executes in < 5 seconds. Ideal for rapid pipeline testing or offline environments.
 ```bash
-# Run with 50 employees
-python main.py --employees 50
-
-# Run with 100 employees in heuristic mode
-python main.py --employees 100 --no-transformer
+python main.py --employees 50 --no-transformer
 ```
 
 ---
 
-## What Gets Generated
+##  Output & Telemetry
 
-After the run completes, the `output/` folder contains:
+After execution, the `output/` directory is populated with actionable SOC intelligence:
 
-| File | Description |
-|---|---|
-| `susceptibility_heatmap.png` | Department × Principle heatmap (red = high risk) |
-| `vulnerability_graph.png` | Network graph: employees → departments → principles |
-| `top_risk_individuals.png` | Bar chart of highest-risk individuals |
-| `risk_report.csv` | Full structured data — OCEAN scores, susceptibility scores, risk tiers |
-| `graph.json` | NetworkX graph in JSON format (load into D3.js or Gephi) |
-| `synthetic_profiles.json` | Raw generated employee profiles |
-
----
-
-## How the Pipeline Works
-
-```
-Raw Text
-    ↓
-[Preprocessor]         → Cleans text, extracts linguistic features
-    ↓
-[Personality Inference] → Infers Big Five (OCEAN) scores per person
-    ↓
-[Susceptibility Scorer] → Maps OCEAN traits to Cialdini principle scores
-    ↓
-[Graph Builder]         → Builds a NetworkX organizational vulnerability graph
-    ↓
-[Visualizer]            → Generates heatmaps, network graphs, CSV report
-```
-
----
-
-## The Susceptibility Mapping
-
-The core of the framework is a **mapping matrix** that translates personality
-trait scores into persuasion susceptibility scores.
-
-Example:
-
-| Trait | High Score Means | Most Susceptible To |
+| File | Description | SIEM / Dashboard Use |
 |---|---|---|
-| Neuroticism | Stress-reactive, anxious | Urgency, Scarcity |
-| Conscientiousness | Rule-following, hierarchical | Authority, Scarcity |
-| Agreeableness | Trusting, cooperative | Liking, Reciprocity, Social Proof |
-| Extraversion | Social, outward-facing | Social Proof, Liking |
-| Openness | Curious, creative | Reciprocity, Liking |
+| `risk_report.csv` | Full structured data containing raw OCEAN scores, calculated susceptibility, and risk tiers. | Ideal for Splunk / Elastic ingestion. |
+| `graph.json` | Complete NetworkX topological graph in JSON format. | Load into D3.js, Gephi, or React-Force-Graph. |
+| `vulnerability_graph.png`| Visual network mapping employees to their specific Cialdini vulnerabilities (Red = HIGH Risk). | Exec summaries / War Room dashboards. |
+| `susceptibility_heatmap.png`| Department × Principle risk density matrix. | Identifying departmental training needs. |
+| `top_risk_individuals.png` | Bar chart identifying the highest-risk targets within the analyzed cohort. | Spear-phishing defense prioritization. |
 
 ---
 
-## Risk Tiers
+##  Theoretical Foundation
 
-| Score Range | Tier | Meaning |
+The framework relies on a heavily researched **Susceptibility Matrix** that maps standard Big Five (OCEAN) traits to Robert Cialdini's Six Principles of Persuasion.
+
+| Personality Trait | High Score Indicators | Primary Attack Vectors |
 |---|---|---|
-| ≥ 0.65 | HIGH | Strong training priority — likely to respond to this attack vector |
-| 0.40 – 0.64 | MEDIUM | Moderate risk — needs awareness training |
-| < 0.40 | LOW | Relatively resistant to this specific principle |
+| **Neuroticism** | Stress-reactive, anxious, hyper-vigilant | Urgency, Scarcity |
+| **Conscientiousness** | Rule-following, structured, hierarchical | Authority, Scarcity |
+| **Agreeableness** | Trusting, highly cooperative, empathetic | Liking, Reciprocity, Social Proof |
+| **Extraversion** | Outward-facing, highly social, status-aware| Social Proof, Liking |
+| **Openness** | Curious, creative, risk-tolerant | Reciprocity, Liking |
+
+### Risk Tiers
+* **HIGH (≥ 0.65):** Critical vulnerability. The individual is highly likely to respond to this specific psychological lure. Immediate targeted SAT required.
+* **MEDIUM (0.40 – 0.64):** Moderate vulnerability. General awareness training recommended.
+* **LOW (< 0.40):** High resistance. The individual is naturally skeptical of this psychological lever.
 
 ---
 
-## Extending the Project
+##  Extending the Framework (OSINT Integration)
 
-**To use real text input instead of synthetic profiles:**
-Edit `main.py` and replace the `generate_organization()` call with your own
-data loader. Each profile dict needs at minimum:
-```python
-{
-    "id": "EMP-001",
-    "name": "Name Here",
-    "department": "Finance",
-    "title": "Analyst",
-    "text": "The public text you want to analyze..."
-}
-```
+SocialSvalinn defaults to analyzing synthetic profiles to ensure privacy. To deploy this tool against real targets (e.g., Red Team engagements), replace the `generate_organization()` call in `main.py` with an OSINT scraper module.
 
-**To add a new Cialdini principle:**
-1. Add its name to `CIALDINI_PRINCIPLES` in `config.py`
-2. Add its weight column to `SUSCEPTIBILITY_MATRIX` in `config.py`
-
-**To swap the personality model:**
-Change `PERSONALITY_MODEL_NAME` in `config.py` to any HuggingFace model
-that returns Big Five (OCEAN) labels.
 
 ---
 
-## Research References
+##  Ethical & Compliance Guardrails
 
-- Cialdini, R. B. (1984). *Influence: The Psychology of Persuasion.*
-- Mairesse et al. (2007). Using linguistic cues for the automatic recognition of personality.
-- Workman, M. (2008). Wisecrackers: A theory-grounded investigation of phishing and pretext social engineering.
-- Kosinski, M. et al. (2013). Private traits and attributes are predictable from digital records.
-- Vishwanath, A. et al. (2011). Why do people get phished?
+**This framework is designed exclusively for defensive cybersecurity research and organizational protection.** 
 
----
-
-## Notes on Ethics
-
-This framework is designed exclusively for **defensive research**.
-The synthetic data generator is the default input source specifically
-to avoid processing any real individual's data without consent.
-Any deployment against real organizational data requires:
-- Explicit informed consent from all employees
-- Institutional ethics approval (IRB or equivalent)
-- Data handling compliance with DPDP Act 2023 (India) / GDPR
+Because psycholinguistic profiling handles highly sensitive behavioral data, any deployment of SocialSvalinn on real individuals must adhere to the following strict guidelines:
+1. **Consent:** Explicit, informed consent must be obtained from all analyzed personnel.
+2. **Compliance:** Data handling must comply fully with local privacy laws (e.g., GDPR, CCPA, DPDP Act 2023).
+3. **Anonymization:** For internal corporate use, Employee Names should be hashed or omitted prior to running the pipeline, retaining only Department and Job Title metadata.
+4. **No Weaponization:** This tool must not be used to conduct malicious spear-phishing campaigns or psychological manipulation.
 
 ---
-
-*Research Prototype — v1.0*
