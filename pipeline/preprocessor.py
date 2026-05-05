@@ -6,6 +6,7 @@
 
 import re
 import string
+import spacy 
 
 def _simple_sent_tokenize(text: str) -> list:
     """Simple regex-based sentence splitter that requires no downloads."""

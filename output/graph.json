@@ -65,110 +65,440 @@
     },
     {
       "node_type": "employee",
-      "name": "Deepak Pandey",
-      "department": "Engineering",
-      "title": "Software Engineer",
-      "overall_risk": 0.2403,
-      "ocean": "{\"Openness\": 0.4, \"Conscientiousness\": 0.44, \"Extraversion\": 0.3, \"Agreeableness\": 0.5206, \"Neuroticism\": 0.377}",
-      "top_vulnerability": "Urgency",
+      "name": "Anjali Iyer",
+      "department": "Finance",
+      "title": "Financial Analyst",
+      "overall_risk": 0.9329,
+      "ocean": "{\"Openness\": 0.2369, \"Conscientiousness\": 0.234, \"Extraversion\": 0.1703, \"Agreeableness\": 0.1146, \"Neuroticism\": 0.2441}",
+      "top_vulnerability": "Scarcity",
       "id": "EMP-005"
     },
     {
       "node_type": "employee",
-      "name": "Anjali Nair",
-      "department": "Finance",
-      "title": "CFO",
-      "overall_risk": 0.2473,
-      "ocean": "{\"Openness\": 0.4, \"Conscientiousness\": 0.4444, \"Extraversion\": 0.3, \"Agreeableness\": 0.5231, \"Neuroticism\": 0.3731}",
+      "name": "Kavya Joshi",
+      "department": "Engineering",
+      "title": "DevOps Engineer",
+      "overall_risk": 0.8192,
+      "ocean": "{\"Openness\": 0.2137, \"Conscientiousness\": 0.2168, \"Extraversion\": 0.1779, \"Agreeableness\": 0.1548, \"Neuroticism\": 0.2369}",
       "top_vulnerability": "Urgency",
-      "id": "EMP-001"
+      "id": "EMP-015"
     },
     {
       "node_type": "employee",
-      "name": "Aditya Joshi",
+      "name": "Swati Das",
+      "department": "Engineering",
+      "title": "Solutions Architect",
+      "overall_risk": 1.0,
+      "ocean": "{\"Openness\": 0.228, \"Conscientiousness\": 0.241, \"Extraversion\": 0.1713, \"Agreeableness\": 0.1201, \"Neuroticism\": 0.2395}",
+      "top_vulnerability": "Authority",
+      "id": "EMP-011"
+    },
+    {
+      "node_type": "employee",
+      "name": "Karan Kumar",
       "department": "Legal",
-      "title": "Compliance Officer",
-      "overall_risk": 0.0666,
-      "ocean": "{\"Openness\": 0.4, \"Conscientiousness\": 0.4217, \"Extraversion\": 0.3, \"Agreeableness\": 0.5486, \"Neuroticism\": 0.3322}",
-      "top_vulnerability": "Liking",
+      "title": "Data Protection Lead",
+      "overall_risk": 0.8413,
+      "ocean": "{\"Openness\": 0.2205, \"Conscientiousness\": 0.22, \"Extraversion\": 0.1793, \"Agreeableness\": 0.1413, \"Neuroticism\": 0.2388}",
+      "top_vulnerability": "Urgency",
+      "id": "EMP-020"
+    },
+    {
+      "node_type": "employee",
+      "name": "Arjun Pandey",
+      "department": "HR",
+      "title": "HR Business Partner",
+      "overall_risk": 0.6398,
+      "ocean": "{\"Openness\": 0.2277, \"Conscientiousness\": 0.2175, \"Extraversion\": 0.1899, \"Agreeableness\": 0.1429, \"Neuroticism\": 0.2219}",
+      "top_vulnerability": "Authority",
+      "id": "EMP-010"
+    },
+    {
+      "node_type": "employee",
+      "name": "Aditya Iyer",
+      "department": "HR",
+      "title": "HR Business Partner",
+      "overall_risk": 0.8376,
+      "ocean": "{\"Openness\": 0.2246, \"Conscientiousness\": 0.2227, \"Extraversion\": 0.1783, \"Agreeableness\": 0.1356, \"Neuroticism\": 0.2388}",
+      "top_vulnerability": "Urgency",
       "id": "EMP-007"
     },
     {
       "node_type": "employee",
-      "name": "Sneha Gupta",
+      "name": "Anjali Iyer",
       "department": "Finance",
-      "title": "Senior Accountant",
-      "overall_risk": 0.8927,
-      "ocean": "{\"Openness\": 0.4233, \"Conscientiousness\": 0.4911, \"Extraversion\": 0.3465, \"Agreeableness\": 0.5738, \"Neuroticism\": 0.3663}",
-      "top_vulnerability": "Urgency",
+      "title": "Budget Manager",
+      "overall_risk": 0.9407,
+      "ocean": "{\"Openness\": 0.2314, \"Conscientiousness\": 0.2354, \"Extraversion\": 0.167, \"Agreeableness\": 0.1278, \"Neuroticism\": 0.2384}",
+      "top_vulnerability": "Authority",
+      "id": "EMP-001"
+    },
+    {
+      "node_type": "employee",
+      "name": "Ravi Rao",
+      "department": "Finance",
+      "title": "CFO",
+      "overall_risk": 0.8856,
+      "ocean": "{\"Openness\": 0.2459, \"Conscientiousness\": 0.2334, \"Extraversion\": 0.168, \"Agreeableness\": 0.1148, \"Neuroticism\": 0.238}",
+      "top_vulnerability": "Authority",
       "id": "EMP-002"
     },
     {
       "node_type": "employee",
-      "name": "Karan Mehta",
+      "name": "Vivek Nair",
+      "department": "Sales",
+      "title": "Account Executive",
+      "overall_risk": 0.8983,
+      "ocean": "{\"Openness\": 0.2221, \"Conscientiousness\": 0.2347, \"Extraversion\": 0.1793, \"Agreeableness\": 0.132, \"Neuroticism\": 0.2318}",
+      "top_vulnerability": "Authority",
+      "id": "EMP-024"
+    },
+    {
+      "node_type": "employee",
+      "name": "Rahul Das",
       "department": "Legal",
       "title": "Data Protection Lead",
-      "overall_risk": 0.2417,
-      "ocean": "{\"Openness\": 0.4, \"Conscientiousness\": 0.4517, \"Extraversion\": 0.3, \"Agreeableness\": 0.5313, \"Neuroticism\": 0.3599}",
+      "overall_risk": 0.9483,
+      "ocean": "{\"Openness\": 0.2464, \"Conscientiousness\": 0.1883, \"Extraversion\": 0.169, \"Agreeableness\": 0.1405, \"Neuroticism\": 0.2558}",
+      "top_vulnerability": "Urgency",
+      "id": "EMP-018"
+    },
+    {
+      "node_type": "employee",
+      "name": "Priya Mishra",
+      "department": "Operations",
+      "title": "Process Engineer",
+      "overall_risk": 0.8771,
+      "ocean": "{\"Openness\": 0.213, \"Conscientiousness\": 0.2312, \"Extraversion\": 0.1854, \"Agreeableness\": 0.1361, \"Neuroticism\": 0.2343}",
+      "top_vulnerability": "Authority",
+      "id": "EMP-026"
+    },
+    {
+      "node_type": "employee",
+      "name": "Arjun Bose",
+      "department": "Operations",
+      "title": "Process Engineer",
+      "overall_risk": 0.7159,
+      "ocean": "{\"Openness\": 0.2166, \"Conscientiousness\": 0.2099, \"Extraversion\": 0.1946, \"Agreeableness\": 0.1501, \"Neuroticism\": 0.2287}",
+      "top_vulnerability": "Urgency",
+      "id": "EMP-027"
+    },
+    {
+      "node_type": "employee",
+      "name": "Anjali Verma",
+      "department": "HR",
+      "title": "People Operations Manager",
+      "overall_risk": 0.8819,
+      "ocean": "{\"Openness\": 0.2415, \"Conscientiousness\": 0.2153, \"Extraversion\": 0.1638, \"Agreeableness\": 0.1317, \"Neuroticism\": 0.2476}",
       "top_vulnerability": "Urgency",
       "id": "EMP-008"
     },
     {
       "node_type": "employee",
-      "name": "Swati Sharma",
-      "department": "Engineering",
-      "title": "Solutions Architect",
-      "overall_risk": 0.1668,
-      "ocean": "{\"Openness\": 0.4, \"Conscientiousness\": 0.4689, \"Extraversion\": 0.3, \"Agreeableness\": 0.5671, \"Neuroticism\": 0.3026}",
-      "top_vulnerability": "Reciprocity",
-      "id": "EMP-006"
+      "name": "Deepak Sharma",
+      "department": "Legal",
+      "title": "Legal Counsel",
+      "overall_risk": 0.7654,
+      "ocean": "{\"Openness\": 0.2052, \"Conscientiousness\": 0.2076, \"Extraversion\": 0.2153, \"Agreeableness\": 0.1676, \"Neuroticism\": 0.2043}",
+      "top_vulnerability": "Social Proof",
+      "id": "EMP-017"
     },
     {
       "node_type": "employee",
-      "name": "Rahul Shah",
-      "department": "Sales",
-      "title": "Sales Manager",
-      "overall_risk": 0.1828,
-      "ocean": "{\"Openness\": 0.4, \"Conscientiousness\": 0.4489, \"Extraversion\": 0.3, \"Agreeableness\": 0.544, \"Neuroticism\": 0.3396}",
+      "name": "Deepak Bose",
+      "department": "HR",
+      "title": "Talent Acquisition Lead",
+      "overall_risk": 0.7011,
+      "ocean": "{\"Openness\": 0.228, \"Conscientiousness\": 0.1844, \"Extraversion\": 0.1865, \"Agreeableness\": 0.1672, \"Neuroticism\": 0.234}",
       "top_vulnerability": "Urgency",
       "id": "EMP-009"
     },
     {
       "node_type": "employee",
-      "name": "Divya Shah",
+      "name": "Aditya Gupta",
       "department": "HR",
       "title": "Talent Acquisition Lead",
-      "overall_risk": 0.1786,
-      "ocean": "{\"Openness\": 0.4, \"Conscientiousness\": 0.4467, \"Extraversion\": 0.3, \"Agreeableness\": 0.5432, \"Neuroticism\": 0.3409}",
+      "overall_risk": 0.8487,
+      "ocean": "{\"Openness\": 0.2337, \"Conscientiousness\": 0.206, \"Extraversion\": 0.1722, \"Agreeableness\": 0.1439, \"Neuroticism\": 0.2442}",
+      "top_vulnerability": "Urgency",
+      "id": "EMP-006"
+    },
+    {
+      "node_type": "employee",
+      "name": "Aditya Joshi",
+      "department": "Operations",
+      "title": "Supply Chain Analyst",
+      "overall_risk": 0.738,
+      "ocean": "{\"Openness\": 0.225, \"Conscientiousness\": 0.2146, \"Extraversion\": 0.1811, \"Agreeableness\": 0.1465, \"Neuroticism\": 0.2328}",
+      "top_vulnerability": "Urgency",
+      "id": "EMP-029"
+    },
+    {
+      "node_type": "employee",
+      "name": "Aditya Sharma",
+      "department": "Sales",
+      "title": "Account Executive",
+      "overall_risk": 0.9831,
+      "ocean": "{\"Openness\": 0.2346, \"Conscientiousness\": 0.2402, \"Extraversion\": 0.17, \"Agreeableness\": 0.1156, \"Neuroticism\": 0.2397}",
+      "top_vulnerability": "Authority",
+      "id": "EMP-021"
+    },
+    {
+      "node_type": "employee",
+      "name": "Rahul Kumar",
+      "department": "Sales",
+      "title": "Account Executive",
+      "overall_risk": 0.9756,
+      "ocean": "{\"Openness\": 0.2549, \"Conscientiousness\": 0.235, \"Extraversion\": 0.1596, \"Agreeableness\": 0.1026, \"Neuroticism\": 0.2479}",
+      "top_vulnerability": "Scarcity",
+      "id": "EMP-025"
+    },
+    {
+      "node_type": "employee",
+      "name": "Sneha Pillai",
+      "department": "Operations",
+      "title": "Process Engineer",
+      "overall_risk": 1.0,
+      "ocean": "{\"Openness\": 0.234, \"Conscientiousness\": 0.233, \"Extraversion\": 0.1646, \"Agreeableness\": 0.1163, \"Neuroticism\": 0.2521}",
+      "top_vulnerability": "Urgency",
+      "id": "EMP-030"
+    },
+    {
+      "node_type": "employee",
+      "name": "Suresh Verma",
+      "department": "Finance",
+      "title": "CFO",
+      "overall_risk": 0.8007,
+      "ocean": "{\"Openness\": 0.222, \"Conscientiousness\": 0.2214, \"Extraversion\": 0.1731, \"Agreeableness\": 0.1466, \"Neuroticism\": 0.2369}",
       "top_vulnerability": "Urgency",
       "id": "EMP-003"
     },
     {
       "node_type": "employee",
-      "name": "Ritu Reddy",
-      "department": "HR",
-      "title": "People Operations Manager",
-      "overall_risk": 0.7746,
-      "ocean": "{\"Openness\": 0.4, \"Conscientiousness\": 0.6163, \"Extraversion\": 0.3, \"Agreeableness\": 0.5485, \"Neuroticism\": 0.3325}",
+      "name": "Rahul Bose",
+      "department": "Sales",
+      "title": "Account Executive",
+      "overall_risk": 0.7246,
+      "ocean": "{\"Openness\": 0.2076, \"Conscientiousness\": 0.2225, \"Extraversion\": 0.1962, \"Agreeableness\": 0.1511, \"Neuroticism\": 0.2226}",
       "top_vulnerability": "Authority",
-      "id": "EMP-004"
+      "id": "EMP-023"
     },
     {
       "node_type": "employee",
-      "name": "Deepak Iyer",
-      "department": "Operations",
-      "title": "Process Engineer",
-      "overall_risk": 0.2626,
-      "ocean": "{\"Openness\": 0.4, \"Conscientiousness\": 0.4183, \"Extraversion\": 0.3, \"Agreeableness\": 0.4944, \"Neuroticism\": 0.419}",
+      "name": "Deepak Mishra",
+      "department": "Sales",
+      "title": "Account Executive",
+      "overall_risk": 0.9963,
+      "ocean": "{\"Openness\": 0.2305, \"Conscientiousness\": 0.2182, \"Extraversion\": 0.1735, \"Agreeableness\": 0.1256, \"Neuroticism\": 0.2522}",
       "top_vulnerability": "Urgency",
-      "id": "EMP-010"
+      "id": "EMP-022"
+    },
+    {
+      "node_type": "employee",
+      "name": "Amit Pandey",
+      "department": "Operations",
+      "title": "Supply Chain Analyst",
+      "overall_risk": 0.911,
+      "ocean": "{\"Openness\": 0.2214, \"Conscientiousness\": 0.2353, \"Extraversion\": 0.1804, \"Agreeableness\": 0.1291, \"Neuroticism\": 0.2338}",
+      "top_vulnerability": "Authority",
+      "id": "EMP-028"
+    },
+    {
+      "node_type": "employee",
+      "name": "Rahul Patel",
+      "department": "Legal",
+      "title": "Legal Counsel",
+      "overall_risk": 1.0,
+      "ocean": "{\"Openness\": 0.2162, \"Conscientiousness\": 0.1648, \"Extraversion\": 0.1735, \"Agreeableness\": 0.2574, \"Neuroticism\": 0.1882}",
+      "top_vulnerability": "Liking",
+      "id": "EMP-016"
+    },
+    {
+      "node_type": "employee",
+      "name": "Aditya Reddy",
+      "department": "Engineering",
+      "title": "Software Engineer",
+      "overall_risk": 0.9262,
+      "ocean": "{\"Openness\": 0.2321, \"Conscientiousness\": 0.2167, \"Extraversion\": 0.1645, \"Agreeableness\": 0.1377, \"Neuroticism\": 0.249}",
+      "top_vulnerability": "Urgency",
+      "id": "EMP-012"
+    },
+    {
+      "node_type": "employee",
+      "name": "Ravi Iyer",
+      "department": "Engineering",
+      "title": "DevOps Engineer",
+      "overall_risk": 1.0,
+      "ocean": "{\"Openness\": 0.1792, \"Conscientiousness\": 0.2098, \"Extraversion\": 0.231, \"Agreeableness\": 0.1958, \"Neuroticism\": 0.1841}",
+      "top_vulnerability": "Social Proof",
+      "id": "EMP-013"
+    },
+    {
+      "node_type": "employee",
+      "name": "Neha Pillai",
+      "department": "Legal",
+      "title": "Data Protection Lead",
+      "overall_risk": 0.6605,
+      "ocean": "{\"Openness\": 0.2153, \"Conscientiousness\": 0.204, \"Extraversion\": 0.1904, \"Agreeableness\": 0.1643, \"Neuroticism\": 0.226}",
+      "top_vulnerability": "Urgency",
+      "id": "EMP-019"
+    },
+    {
+      "node_type": "employee",
+      "name": "Manish Joshi",
+      "department": "Engineering",
+      "title": "Solutions Architect",
+      "overall_risk": 0.7288,
+      "ocean": "{\"Openness\": 0.2159, \"Conscientiousness\": 0.2222, \"Extraversion\": 0.1889, \"Agreeableness\": 0.1478, \"Neuroticism\": 0.2252}",
+      "top_vulnerability": "Authority",
+      "id": "EMP-014"
+    },
+    {
+      "node_type": "employee",
+      "name": "Deepak Verma",
+      "department": "Finance",
+      "title": "CFO",
+      "overall_risk": 0.6907,
+      "ocean": "{\"Openness\": 0.2022, \"Conscientiousness\": 0.2224, \"Extraversion\": 0.2061, \"Agreeableness\": 0.1528, \"Neuroticism\": 0.2166}",
+      "top_vulnerability": "Authority",
+      "id": "EMP-004"
     }
   ],
   "edges": [
     {
       "edge_type": "member_of",
       "source": "EMP-005",
+      "target": "Finance"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.928,
+      "risk_tier": "HIGH",
+      "source": "EMP-005",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.893,
+      "risk_tier": "HIGH",
+      "source": "EMP-005",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.9329,
+      "risk_tier": "HIGH",
+      "source": "EMP-005",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-015",
       "target": "Engineering"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.75,
+      "risk_tier": "HIGH",
+      "source": "EMP-015",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8192,
+      "risk_tier": "HIGH",
+      "source": "EMP-015",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.7622,
+      "risk_tier": "HIGH",
+      "source": "EMP-015",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-011",
+      "target": "Engineering"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 1.0,
+      "risk_tier": "HIGH",
+      "source": "EMP-011",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8635,
+      "risk_tier": "HIGH",
+      "source": "EMP-011",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.9329,
+      "risk_tier": "HIGH",
+      "source": "EMP-011",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-020",
+      "target": "Legal"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.7754,
+      "risk_tier": "HIGH",
+      "source": "EMP-020",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8413,
+      "risk_tier": "HIGH",
+      "source": "EMP-020",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.7988,
+      "risk_tier": "HIGH",
+      "source": "EMP-020",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-010",
+      "target": "HR"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-007",
+      "target": "HR"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.7966,
+      "risk_tier": "HIGH",
+      "source": "EMP-007",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8376,
+      "risk_tier": "HIGH",
+      "source": "EMP-007",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8171,
+      "risk_tier": "HIGH",
+      "source": "EMP-007",
+      "target": "Scarcity"
     },
     {
       "edge_type": "member_of",
@@ -176,9 +506,25 @@
       "target": "Finance"
     },
     {
-      "edge_type": "member_of",
-      "source": "EMP-007",
-      "target": "Legal"
+      "edge_type": "susceptible_to",
+      "score": 0.9407,
+      "risk_tier": "HIGH",
+      "source": "EMP-001",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8192,
+      "risk_tier": "HIGH",
+      "source": "EMP-001",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8902,
+      "risk_tier": "HIGH",
+      "source": "EMP-001",
+      "target": "Scarcity"
     },
     {
       "edge_type": "member_of",
@@ -187,103 +533,505 @@
     },
     {
       "edge_type": "susceptible_to",
-      "score": 1.0,
+      "score": 0.8856,
+      "risk_tier": "HIGH",
+      "source": "EMP-002",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.7823,
       "risk_tier": "HIGH",
       "source": "EMP-002",
       "target": "Urgency"
     },
     {
       "edge_type": "susceptible_to",
-      "score": 0.7517,
+      "score": 0.875,
       "risk_tier": "HIGH",
       "source": "EMP-002",
       "target": "Scarcity"
     },
     {
+      "edge_type": "member_of",
+      "source": "EMP-024",
+      "target": "Sales"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8983,
+      "risk_tier": "HIGH",
+      "source": "EMP-024",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.7675,
+      "risk_tier": "HIGH",
+      "source": "EMP-024",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8262,
+      "risk_tier": "HIGH",
+      "source": "EMP-024",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-018",
+      "target": "Legal"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.9483,
+      "risk_tier": "HIGH",
+      "source": "EMP-018",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.7622,
+      "risk_tier": "HIGH",
+      "source": "EMP-018",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-026",
+      "target": "Operations"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8771,
+      "risk_tier": "HIGH",
+      "source": "EMP-026",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8266,
+      "risk_tier": "HIGH",
+      "source": "EMP-026",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8262,
+      "risk_tier": "HIGH",
+      "source": "EMP-026",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-027",
+      "target": "Operations"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.7159,
+      "risk_tier": "HIGH",
+      "source": "EMP-027",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-008",
+      "target": "HR"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.75,
+      "risk_tier": "HIGH",
+      "source": "EMP-008",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8819,
+      "risk_tier": "HIGH",
+      "source": "EMP-008",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8506,
+      "risk_tier": "HIGH",
+      "source": "EMP-008",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-017",
+      "target": "Legal"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.7654,
+      "risk_tier": "HIGH",
+      "source": "EMP-017",
+      "target": "Social Proof"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-009",
+      "target": "HR"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.7011,
+      "risk_tier": "HIGH",
+      "source": "EMP-009",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-006",
+      "target": "HR"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8487,
+      "risk_tier": "HIGH",
+      "source": "EMP-006",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.7652,
+      "risk_tier": "HIGH",
+      "source": "EMP-006",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-029",
+      "target": "Operations"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.678,
+      "risk_tier": "HIGH",
+      "source": "EMP-029",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.738,
+      "risk_tier": "HIGH",
+      "source": "EMP-029",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.7134,
+      "risk_tier": "HIGH",
+      "source": "EMP-029",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-021",
+      "target": "Sales"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.9831,
+      "risk_tier": "HIGH",
+      "source": "EMP-021",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8487,
+      "risk_tier": "HIGH",
+      "source": "EMP-021",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.9329,
+      "risk_tier": "HIGH",
+      "source": "EMP-021",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-025",
+      "target": "Sales"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.9407,
+      "risk_tier": "HIGH",
+      "source": "EMP-025",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.893,
+      "risk_tier": "HIGH",
+      "source": "EMP-025",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.9756,
+      "risk_tier": "HIGH",
+      "source": "EMP-025",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-030",
+      "target": "Operations"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.9703,
+      "risk_tier": "HIGH",
+      "source": "EMP-030",
+      "target": "Authority"
+    },
+    {
       "edge_type": "susceptible_to",
       "score": 1.0,
       "risk_tier": "HIGH",
-      "source": "EMP-002",
+      "source": "EMP-030",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 1.0,
+      "risk_tier": "HIGH",
+      "source": "EMP-030",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-003",
+      "target": "Finance"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.7924,
+      "risk_tier": "HIGH",
+      "source": "EMP-003",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8007,
+      "risk_tier": "HIGH",
+      "source": "EMP-003",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.7927,
+      "risk_tier": "HIGH",
+      "source": "EMP-003",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-023",
+      "target": "Sales"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.7246,
+      "risk_tier": "HIGH",
+      "source": "EMP-023",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.6753,
+      "risk_tier": "HIGH",
+      "source": "EMP-023",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.6677,
+      "risk_tier": "HIGH",
+      "source": "EMP-023",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-022",
+      "target": "Sales"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8051,
+      "risk_tier": "HIGH",
+      "source": "EMP-022",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.9963,
+      "risk_tier": "HIGH",
+      "source": "EMP-022",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.9116,
+      "risk_tier": "HIGH",
+      "source": "EMP-022",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-028",
+      "target": "Operations"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.911,
+      "risk_tier": "HIGH",
+      "source": "EMP-028",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8007,
+      "risk_tier": "HIGH",
+      "source": "EMP-028",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.8476,
+      "risk_tier": "HIGH",
+      "source": "EMP-028",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-016",
+      "target": "Legal"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.9115,
+      "risk_tier": "HIGH",
+      "source": "EMP-016",
       "target": "Social Proof"
     },
     {
       "edge_type": "susceptible_to",
       "score": 1.0,
       "risk_tier": "HIGH",
-      "source": "EMP-002",
+      "source": "EMP-016",
       "target": "Liking"
     },
     {
       "edge_type": "susceptible_to",
       "score": 1.0,
       "risk_tier": "HIGH",
-      "source": "EMP-002",
+      "source": "EMP-016",
       "target": "Reciprocity"
     },
     {
       "edge_type": "member_of",
-      "source": "EMP-008",
-      "target": "Legal"
-    },
-    {
-      "edge_type": "member_of",
-      "source": "EMP-006",
+      "source": "EMP-012",
       "target": "Engineering"
     },
     {
-      "edge_type": "member_of",
-      "source": "EMP-009",
-      "target": "Sales"
-    },
-    {
-      "edge_type": "member_of",
-      "source": "EMP-003",
-      "target": "HR"
-    },
-    {
-      "edge_type": "member_of",
-      "source": "EMP-004",
-      "target": "HR"
-    },
-    {
       "edge_type": "susceptible_to",
-      "score": 1.0,
+      "score": 0.7881,
       "risk_tier": "HIGH",
-      "source": "EMP-004",
+      "source": "EMP-012",
       "target": "Authority"
     },
     {
       "edge_type": "susceptible_to",
-      "score": 0.8256,
+      "score": 0.9262,
       "risk_tier": "HIGH",
-      "source": "EMP-004",
+      "source": "EMP-012",
       "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.872,
+      "risk_tier": "HIGH",
+      "source": "EMP-012",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-013",
+      "target": "Engineering"
     },
     {
       "edge_type": "susceptible_to",
       "score": 1.0,
       "risk_tier": "HIGH",
-      "source": "EMP-004",
-      "target": "Scarcity"
+      "source": "EMP-013",
+      "target": "Social Proof"
     },
     {
       "edge_type": "susceptible_to",
-      "score": 0.8393,
+      "score": 0.7606,
       "risk_tier": "HIGH",
-      "source": "EMP-004",
-      "target": "Reciprocity"
+      "source": "EMP-013",
+      "target": "Liking"
     },
     {
       "edge_type": "member_of",
-      "source": "EMP-010",
-      "target": "Operations"
+      "source": "EMP-019",
+      "target": "Legal"
     },
     {
       "edge_type": "susceptible_to",
-      "score": 0.9205,
+      "score": 0.6605,
       "risk_tier": "HIGH",
-      "source": "EMP-010",
+      "source": "EMP-019",
       "target": "Urgency"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-014",
+      "target": "Engineering"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.7288,
+      "risk_tier": "HIGH",
+      "source": "EMP-014",
+      "target": "Authority"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.679,
+      "risk_tier": "HIGH",
+      "source": "EMP-014",
+      "target": "Urgency"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.689,
+      "risk_tier": "HIGH",
+      "source": "EMP-014",
+      "target": "Scarcity"
+    },
+    {
+      "edge_type": "member_of",
+      "source": "EMP-004",
+      "target": "Finance"
+    },
+    {
+      "edge_type": "susceptible_to",
+      "score": 0.6907,
+      "risk_tier": "HIGH",
+      "source": "EMP-004",
+      "target": "Authority"
     }
   ]
 }

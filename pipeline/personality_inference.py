@@ -12,6 +12,7 @@
 import numpy as np
 from config import OCEAN_TRAITS, PERSONALITY_MODEL_NAME, MAX_TOKEN_LENGTH
 from pipeline.preprocessor import preprocess
+import sys
 
 # ------------------------------------------------------------------
 # Attempt to load the transformer model at import time.
@@ -29,7 +30,7 @@ def _load_model():
         _personality_pipeline = hf_pipeline(
             "text-classification",
             model=PERSONALITY_MODEL_NAME,
-            return_all_scores=True,
+            top_k=None,  # <--- THE FIX: Forces transformers to return ALL scores, not just top 1
             truncation=True,
             max_length=MAX_TOKEN_LENGTH,
         )
@@ -53,10 +54,6 @@ def _fallback_ocean_from_features(features: dict) -> dict:
     """
     Estimates OCEAN scores from linguistic features when the
     transformer model is unavailable.
-
-    This is intentionally simple — it gives plausible scores
-    rather than precise ones. Research-grade results require
-    the actual model.
     """
     certainty   = features.get("certainty_word_ratio", 0.3)
     tentative   = features.get("tentative_word_ratio", 0.3)
@@ -81,14 +78,12 @@ def _fallback_ocean_from_features(features: dict) -> dict:
     return normalized
 
 
+ # Add this to the top of your file if it's not there!
+
 def _infer_with_model(text_chunks: list) -> dict:
     """
     Runs text chunks through the transformer model and averages
     the OCEAN scores across all chunks.
-
-    The Minej/bert-base-personality model returns labels like:
-    "Openness_pos", "Openness_neg", "Conscientiousness_pos", etc.
-    We extract the _pos score for each trait as the trait score.
     """
     chunk_scores = []
 
@@ -97,29 +92,124 @@ def _infer_with_model(text_chunks: list) -> dict:
             continue
         try:
             result = _personality_pipeline(chunk)
-            # result is a list of lists: [[{label, score}, ...]]
             if result and isinstance(result[0], list):
                 label_scores = result[0]
             else:
                 label_scores = result
 
-            # Build a dict from label → score
-            label_dict = {item["label"]: item["score"] for item in label_scores}
+            label_dict = {item["label"].lower(): item["score"] for item in label_scores}
 
             chunk_ocean = {}
-            for trait in OCEAN_TRAITS:
-                # Try to find "TraitName_pos" label
-                pos_key = f"{trait}_pos"
-                neg_key = f"{trait}_neg"
+            
+            trait_mapping = {
+                "Openness": ["openness", "opn", "o", "label_0"],
+                "Conscientiousness": ["conscientiousness", "con", "c", "label_1"],
+                "Extraversion": ["extraversion", "extroversion", "ext", "e", "label_2"],
+                "Agreeableness": ["agreeableness", "agr", "a", "label_3"],
+                "Neuroticism": ["neuroticism", "neu", "n", "label_4"]
+            }
 
-                if pos_key in label_dict:
-                    # Use pos score directly (sigmoid output)
-                    chunk_ocean[trait] = label_dict[pos_key]
-                elif trait in label_dict:
-                    chunk_ocean[trait] = label_dict[trait]
-                else:
-                    # If label format is unexpected, use 0.5 as neutral
-                    chunk_ocean[trait] = 0.5
+            for trait in OCEAN_TRAITS:
+                score_found = False
+                for possible_label in trait_mapping.get(trait, []):
+                    for key in label_dict.keys():
+                        if key.startswith(possible_label) or key == possible_label:
+                            chunk_ocean[trait] = label_dict[key]
+                            score_found = True
+                            break 
+                    if score_found:
+                         break 
+                
+                if not score_found:
+                    chunk_ocean[trait] = 0.5 
+
+            chunk_scores.append(chunk_ocean)
+
+        except Exception as e:
+            # We only want to see this if something actually crashes
+            print(f"\n[Error] NLP Chunk inference failed: {e}")
+            continue
+
+    if not chunk_scores:
+        return {trait: 0.5 for trait in OCEAN_TRAITS}
+
+    averaged = {}
+    for trait in OCEAN_TRAITS:
+        values = [c[trait] for c in chunk_scores if trait in c]
+        averaged[trait] = round(np.mean(values), 4) if values else 0.5
+
+    return averaged
+
+
+def infer_batch(profiles: list) -> list:
+    """
+    Runs personality inference on a list of employee profiles with a clean progress indicator.
+    """
+    total = len(profiles)
+    print(f"  [PersonalityModel] Analyzing {total} profiles through the NLP engine...")
+    
+    for i, profile in enumerate(profiles):
+        ocean = infer_personality(profile.get("text", ""))
+        profile["ocean_scores"] = {k: v for k, v in ocean.items() if k != "method"}
+        profile["inference_method"] = ocean.get("method", "unknown")
+        
+        # Clean, single-line progress update instead of spamming the console
+        progress = int(((i + 1) / total) * 100)
+        sys.stdout.write(f"\r  [PersonalityModel] Progress: {progress}% complete ")
+        sys.stdout.flush()
+        
+    print() # Print a newline when done so the next step formats correctly
+    return profiles
+    """
+    Runs text chunks through the transformer model and averages
+    the OCEAN scores across all chunks.
+    """
+    chunk_scores = []
+    
+    # Flag to ensure we only print the debug line once per run
+    debug_printed = False 
+
+    for chunk in text_chunks:
+        if not chunk.strip():
+            continue
+        try:
+            result = _personality_pipeline(chunk)
+            if result and isinstance(result[0], list):
+                label_scores = result[0]
+            else:
+                label_scores = result
+
+            # Force all incoming labels to lowercase for matching
+            label_dict = {item["label"].lower(): item["score"] for item in label_scores}
+
+            if not debug_printed:
+                print(f"  [DEBUG] Raw HuggingFace Model Labels: {list(label_dict.keys())}")
+                debug_printed = True
+
+            chunk_ocean = {}
+            
+            # Map the unformatted LABEL_X outputs to OCEAN traits
+            trait_mapping = {
+                "Openness": ["openness", "opn", "o", "label_0"],
+                "Conscientiousness": ["conscientiousness", "con", "c", "label_1"],
+                "Extraversion": ["extraversion", "extroversion", "ext", "e", "label_2"],
+                "Agreeableness": ["agreeableness", "agr", "a", "label_3"],
+                "Neuroticism": ["neuroticism", "neu", "n", "label_4"]
+            }
+
+            for trait in OCEAN_TRAITS:
+                score_found = False
+                for possible_label in trait_mapping.get(trait, []):
+                    for key in label_dict.keys():
+                        if key.startswith(possible_label) or key == possible_label:
+                            chunk_ocean[trait] = label_dict[key]
+                            score_found = True
+                            break 
+                    if score_found:
+                         break 
+                
+                if not score_found:
+                    chunk_ocean[trait] = 0.5 # Failsafe
 
             chunk_scores.append(chunk_ocean)
 

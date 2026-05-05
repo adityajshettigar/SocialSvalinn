@@ -1,82 +1,242 @@
 [
   {
     "id": "EMP-005",
-    "name": "Deepak Pandey",
+    "name": "Anjali Iyer",
+    "department": "Finance",
+    "title": "Financial Analyst",
+    "archetype": "reactive",
+    "text": "Results-driven Financial Analyst with a strong track record of delivering accurate budget forecasts and analyzing financial data to inform business decisions. Proven ability to rapidly assimilate complex financial information and respond to dynamic market conditions, driving strategic insights and growth opportunities. With a keen eye for detail and a collaborative spirit, I excel in fast-paced environments where adaptability and effective communication are key."
+  },
+  {
+    "id": "EMP-015",
+    "name": "Kavya Joshi",
     "department": "Engineering",
-    "title": "Software Engineer",
+    "title": "DevOps Engineer",
     "archetype": "curious",
-    "text": "Results-driven software engineer with 14 years of experience driving system architecture and design decisions to deliver scalable, high-performance solutions. I continually seek out opportunities to explore novel technologies and approaches, leveraging this expertise to streamline complex systems and drive innovation. My commitment to continuous learning and collaboration enables me to stay ahead of emerging trends, ensuring cutting-edge solutions for my clients and organizations."
+    "text": "As a seasoned DevOps Engineer with 14 years of experience driving digital transformation, I thrive in environments where innovation and problem-solving intersect. My passion for exploring the intricacies of technology and processes has enabled me to develop innovative solutions that bridge the gap between software development and operations. With a relentless pursuit of knowledge and a drive to improve efficiency, I continually adapt and refine processes to meet the evolving needs of businesses and their customers."
   },
   {
-    "id": "EMP-001",
-    "name": "Anjali Nair",
-    "department": "Finance",
-    "title": "CFO",
-    "archetype": "methodical",
-    "text": "As a seasoned finance leader with 10 years of experience in auditing, I bring a disciplined approach to strategic financial planning, analysis, and decision-making. My expertise in identifying and mitigating risks, coupled with a keen eye for detail, enables me to drive business growth while ensuring long-term financial sustainability. I excel in navigating complex financial landscapes and leveraging data-driven insights to inform informed corporate decisions."
-  },
-  {
-    "id": "EMP-007",
-    "name": "Aditya Joshi",
-    "department": "Legal",
-    "title": "Compliance Officer",
-    "archetype": "social",
-    "text": "Results-driven Compliance Officer with 16 years of experience navigating complex regulatory landscapes to ensure seamless business operations. I excel in fostering collaborative relationships with stakeholders to drive compliance excellence, and am adept at distilling intricate regulations into actionable recommendations. With a focus on proactive risk management and strategic planning, I empower organizations to stay ahead of the curve and maintain a competitive edge. My expertise spans regulatory affairs, policy development, and audit management."
-  },
-  {
-    "id": "EMP-002",
-    "name": "Sneha Gupta",
-    "department": "Finance",
-    "title": "Senior Accountant",
-    "archetype": "social",
-    "text": "As a seasoned Senior Accountant with 11 years of experience in auditing, I excel at fostering collaborative relationships with clients and colleagues alike, bringing a unique ability to distill complex financial concepts into actionable insights that drive business growth. My expertise spans financial statement analysis, internal controls, and audit procedures, with a passion for staying at the forefront of regulatory developments and industry trends. I thrive in dynamic environments where my strong communication skills and adaptability enable me to navigate diverse stakeholders and priorities with ease."
-  },
-  {
-    "id": "EMP-008",
-    "name": "Karan Mehta",
-    "department": "Legal",
-    "title": "Data Protection Lead",
-    "archetype": "methodical",
-    "text": "As a seasoned Data Protection Lead with 5 years of experience in data privacy law, I bring meticulous attention to detail and a logical approach to ensuring seamless compliance with regulatory requirements. My expertise spans risk assessment, policy development, and stakeholder engagement, enabling organizations to proactively navigate the complexities of data protection. I excel in analyzing data governance frameworks and identifying areas for improvement, driving informed decision-making and fostering a culture of transparency. By aligning my expertise with business objectives, I empower organizations to thrive in a rapidly evolving regulatory landscape."
-  },
-  {
-    "id": "EMP-006",
-    "name": "Swati Sharma",
+    "id": "EMP-011",
+    "name": "Swati Das",
     "department": "Engineering",
     "title": "Solutions Architect",
-    "archetype": "curious",
-    "text": "Results-driven Solutions Architect with 13 years of expertise in DevOps, driving innovation through collaboration and experimentation to deliver high-impact, scalable solutions that meet the evolving needs of modern businesses. I thrive in environments where technical complexity meets business agility, continuously seeking to uncover new opportunities for efficiency, excellence, and growth. With a passion for exploring the intersection of technology and business, I help organizations harness the power of digital transformation to achieve their most ambitious goals."
-  },
-  {
-    "id": "EMP-009",
-    "name": "Rahul Shah",
-    "department": "Sales",
-    "title": "Sales Manager",
-    "archetype": "reactive",
-    "text": "With a proven track record in building and maintaining strong relationships with clients, I excel at quickly adapting to their needs and priorities, driving results-oriented solutions that meet and exceed their expectations. My collaborative approach empowers teams to respond effectively to changing market conditions and customer demands. By fostering a culture of open communication and continuous learning, I consistently deliver exceptional customer experiences and drive revenue growth."
-  },
-  {
-    "id": "EMP-003",
-    "name": "Divya Shah",
-    "department": "HR",
-    "title": "Talent Acquisition Lead",
-    "archetype": "methodical",
-    "text": "With 18 years of expertise driving strategic talent acquisition and employee relations initiatives, I've developed a proven track record of building and executing effective recruitment strategies that align with business objectives. My meticulous approach to talent sourcing and hiring process optimization has resulted in improved employee satisfaction, retention, and overall organizational performance. I excel at analyzing complex talent market trends and leveraging data insights to inform informed hiring decisions. Through my expertise, I empower organizations to attract, develop, and retain top talent that fuels business growth and success."
-  },
-  {
-    "id": "EMP-004",
-    "name": "Ritu Reddy",
-    "department": "HR",
-    "title": "People Operations Manager",
     "archetype": "social",
-    "text": "As a seasoned People Operations Manager with 6 years of experience in talent acquisition, I have developed a passion for fostering collaborative environments that drive employee engagement and growth. With a talent for building strong relationships and a keen eye for innovative solutions, I excel at aligning HR strategies with business objectives to drive organizational success. My dedication to empowering teams and empowering individuals has allowed me to make a lasting impact in every organization I've served. I'm always looking for innovative ways to connect people, processes, and technology to create a culture of inclusion and excellence."
+    "text": "As a seasoned Solutions Architect with 3 years of experience, I leverage my technical expertise to drive cohesive technology strategies that bridge business goals and user needs. I thrive in collaborative environments where I can distill complex problems into actionable solutions, fostering strong relationships with stakeholders and cross-functional teams. By balancing art and science, I deliver tailored architectures that not only meet but exceed expectations."
+  },
+  {
+    "id": "EMP-020",
+    "name": "Karan Kumar",
+    "department": "Legal",
+    "title": "Data Protection Lead",
+    "archetype": "curious",
+    "text": "Results-driven Data Protection Lead with a proven track record of implementing robust compliance frameworks and ensuring organizations' adherence to data protection regulations. I thrive in complex environments, identifying innovative solutions and opportunities for improvement that foster a culture of transparency and accountability. With a passion for staying ahead of the curve, I actively monitor emerging trends and regulatory updates to inform strategic risk management and mitigation strategies."
   },
   {
     "id": "EMP-010",
-    "name": "Deepak Iyer",
+    "name": "Arjun Pandey",
+    "department": "HR",
+    "title": "HR Business Partner",
+    "archetype": "social",
+    "text": "As a seasoned HR Business Partner with a keen eye for interpersonal dynamics, I excel at fostering collaborative relationships between employees, leadership, and stakeholders to drive growth and resolution. My expertise in employee relations has equipped me to navigate complex issues with empathy and strategic insight, ensuring seamless communication and effective conflict resolution. With a passion for building connections and driving cultural engagement, I bring a unique ability to bridge business objectives with employee needs, cultivating a positive and productive work environment."
+  },
+  {
+    "id": "EMP-007",
+    "name": "Aditya Iyer",
+    "department": "HR",
+    "title": "HR Business Partner",
+    "archetype": "methodical",
+    "text": "Results-driven HR Business Partner with 15 years of expertise in workforce planning, leveraging analytical insights to inform strategic talent decisions and drive business growth. I excel in developing and implementing tailored solutions to enhance organizational agility, optimize workforce performance, and foster a culture of collaboration. With a keen eye for detail and a passion for process improvement, I drive data-driven change initiatives that yield measurable outcomes."
+  },
+  {
+    "id": "EMP-001",
+    "name": "Anjali Iyer",
+    "department": "Finance",
+    "title": "Budget Manager",
+    "archetype": "curious",
+    "text": "As a seasoned Budget Manager with 9 years of experience in regulatory compliance, I thrive in environments where precision and attention to detail are paramount. I'm drawn to the intricacies of financial planning and analysis, where I can uncover insights that inform strategic business decisions and drive growth. With a keen eye for optimization and a passion for staying ahead of industry trends, I continuously seek opportunities to refine processes, improve efficiency, and minimize risk."
+  },
+  {
+    "id": "EMP-002",
+    "name": "Ravi Rao",
+    "department": "Finance",
+    "title": "CFO",
+    "archetype": "reactive",
+    "text": "I thrive in high-pressure environments, leveraging my 14-year history of navigating complex financial risks to drive informed decision-making and shape business strategy. With a keen ability to assess and mitigate potential pitfalls, I bring a pragmatic and solutions-focused approach to my work as a CFO. My expertise in risk management has earned me a reputation for delivering stability and growth in dynamic market conditions."
+  },
+  {
+    "id": "EMP-024",
+    "name": "Vivek Nair",
+    "department": "Sales",
+    "title": "Account Executive",
+    "archetype": "curious",
+    "text": "Results-driven account executive with 9 years of experience driving business growth and fostering long-term relationships through strategic partnerships. I thrive in dynamic environments where no two days are the same, constantly seeking to understand and address the evolving needs of clients. With a strong focus on creative problem-solving and collaboration, I excel at building high-performing teams and delivering tailored solutions that exceed expectations."
+  },
+  {
+    "id": "EMP-018",
+    "name": "Rahul Das",
+    "department": "Legal",
+    "title": "Data Protection Lead",
+    "archetype": "curious",
+    "text": "As a seasoned Data Protection Lead with 8 years of experience driving global data privacy strategies, I thrive in environments where data meets complexity, seeking to distill intricate laws and regulations into actionable insights that inform and protect businesses. With a passion for staying at the forefront of emerging trends and compliance challenges, I excel at cultivating collaborative relationships with cross-functional teams and stakeholders to advance organizational data protection initiatives. My expertise spans global data protection regulations, including GDPR and CCPA, with a proven ability to balance business objectives with regulatory requirements to minimize risk and maximize data-driven opportunities. I continuously explore innovative approaches to data governance, privacy engineering, and people-centered data protection strategies."
+  },
+  {
+    "id": "EMP-026",
+    "name": "Priya Mishra",
     "department": "Operations",
     "title": "Process Engineer",
+    "archetype": "methodical",
+    "text": "Results-driven Process Engineer with 7 years of experience optimizing logistics operations to drive efficiency and productivity. I excel at analyzing complex systems, identifying areas for improvement, and developing data-driven solutions to streamline processes and enhance overall performance. With a focus on precision and attention to detail, I collaborate with cross-functional teams to implement and maintain scalable, reliable processes that meet or exceed business objectives."
+  },
+  {
+    "id": "EMP-027",
+    "name": "Arjun Bose",
+    "department": "Operations",
+    "title": "Process Engineer",
+    "archetype": "social",
+    "text": "Results-driven Process Engineer with 15+ years of experience driving operational excellence and continuous improvement in logistics environments. I thrive in collaborative settings, fostering strong relationships with cross-functional teams to develop and implement process enhancements that drive efficiency, quality, and customer satisfaction. By leveraging my technical expertise and interpersonal skills, I create value-added solutions that align business goals with operational realities. My passion is empowering teams to succeed through process optimization and knowledge sharing."
+  },
+  {
+    "id": "EMP-008",
+    "name": "Anjali Verma",
+    "department": "HR",
+    "title": "People Operations Manager",
+    "archetype": "methodical",
+    "text": "As a seasoned People Operations Manager with 12 years of experience in employee relations, I excel in analyzing complex HR challenges and developing data-driven solutions that drive business outcomes. My analytical approach and ability to break down intricate issues into actionable steps enable me to create tailored strategies that enhance employee engagement, mitigate risk, and foster a positive work environment. I leverage my expertise to inform informed decision-making, promote cultural alignment, and drive HR initiatives that support organizational growth and transformation."
+  },
+  {
+    "id": "EMP-017",
+    "name": "Deepak Sharma",
+    "department": "Legal",
+    "title": "Legal Counsel",
+    "archetype": "social",
+    "text": "As a seasoned Legal Counsel with 13 years of experience navigating complex regulatory landscapes, I excel at fostering collaborative relationships with stakeholders to drive business growth and mitigate risk. My expertise in regulatory affairs has allowed me to distill complex legal nuances into actionable insights, enabling cross-functional teams to achieve strategic objectives. With a talent for effectively communicating technical concepts to diverse audiences, I've established a reputation as a trusted advisor and thought leader in the industry. By leveraging my depth of knowledge and interpersonal skills, I help organizations thrive in an increasingly dynamic and interconnected world."
+  },
+  {
+    "id": "EMP-009",
+    "name": "Deepak Bose",
+    "department": "HR",
+    "title": "Talent Acquisition Lead",
+    "archetype": "reactive",
+    "text": "As a seasoned Talent Acquisition Lead with 12 years of experience, I leverage my keen understanding of organizational culture to develop and implement strategic recruitment initiatives that drive business growth and foster high-performing teams. With a strong focus on adaptability and a commitment to staying attuned to the ever-changing needs of our organization, I excel at navigating complex hiring landscapes and identifying top talent. My collaborative approach and passion for shaping workplace culture have allowed me to build enduring relationships with hiring managers, candidates, and cross-functional partners alike. By harnessing my expertise and passion for talent acquisition, I empower organizations to achieve their goals while cultivating a culture of innovation and excellence."
+  },
+  {
+    "id": "EMP-006",
+    "name": "Aditya Gupta",
+    "department": "HR",
+    "title": "Talent Acquisition Lead",
+    "archetype": "social",
+    "text": "Results-driven Talent Acquisition Lead with 13 years of experience cultivating collaborative relationships across diverse teams to drive strategic hiring initiatives and foster a culture of inclusivity and engagement. With a passion for connecting exceptional talent with innovative organizations, I excel at building bridges between candidates, stakeholders, and business objectives. My expertise lies in leveraging data-driven insights, creative recruitment strategies, and consultative approaches to drive meaningful connections and transform talent acquisition experiences. By fostering open communication and trust, I empower organizations to unlock their full potential and thrive in an ever-changing landscape."
+  },
+  {
+    "id": "EMP-029",
+    "name": "Aditya Joshi",
+    "department": "Operations",
+    "title": "Supply Chain Analyst",
+    "archetype": "reactive",
+    "text": "I excel in high-pressure supply chain environments where rapid adjustments and strategic pivots drive business success. With 6 years of experience in process optimization, I've developed a talent for identifying inefficiencies and implementing targeted solutions that yield tangible results. My flexibility and ability to adapt to changing circumstances enable me to navigate complex logistics and drive continuous improvement in fast-paced settings. By leveraging data and analytics, I help organizations streamline operations, reduce costs, and enhance customer satisfaction."
+  },
+  {
+    "id": "EMP-021",
+    "name": "Aditya Sharma",
+    "department": "Sales",
+    "title": "Account Executive",
+    "archetype": "methodical",
+    "text": "As a seasoned Account Executive with 5 years of industry experience, I excel in developing strategic partnerships and delivering results-driven solutions to meet and exceed client expectations. Through meticulous planning, data-driven insights, and a customer-centric approach, I effectively navigate complex client needs and drive business growth. I thrive in fast-paced environments, where attention to detail and adaptability are vital. In partnership with cross-functional teams, I leverage industry expertise to create tailored solutions that drive tangible value for clients and foster long-lasting relationships."
+  },
+  {
+    "id": "EMP-025",
+    "name": "Rahul Kumar",
+    "department": "Sales",
+    "title": "Account Executive",
+    "archetype": "reactive",
+    "text": "Results-driven Account Executive with 7 years of experience driving revenue growth through strategic partnerships, exceptional client relationships, and a passion for navigating complex sales landscapes. Proven ability to adapt and pivot in response to changing market conditions and customer needs. Focused on delivering high-impact solutions and exceeding sales targets in fast-paced, dynamic environments. I thrive in collaborative settings where I can leverage my skills in negotiation, problem-solving, and communication to drive business outcomes."
+  },
+  {
+    "id": "EMP-030",
+    "name": "Sneha Pillai",
+    "department": "Operations",
+    "title": "Process Engineer",
+    "archetype": "methodical",
+    "text": "Results-driven Process Engineer with 15 years of experience driving efficiency and quality improvements across complex supply chain operations. Through a meticulous approach to analysis and problem-solving, I have consistently delivered innovative solutions that optimize business outcomes and meet or exceed customer expectations. My expertise spans process mapping, Six Sigma methodologies, and collaborative project management, enabling seamless execution and continuous improvement in high-paced environments. I thrive in detail-oriented roles where I can leverage my analytical mindset to drive business growth and excellence."
+  },
+  {
+    "id": "EMP-003",
+    "name": "Suresh Verma",
+    "department": "Finance",
+    "title": "CFO",
     "archetype": "curious",
-    "text": "Results-driven Process Engineer with 18 years of experience driving efficiency and excellence in vendor management. I excel at staying ahead of the curve, identifying and mitigating potential risks, and developing innovative solutions to complex problems. Through my dedication to ongoing learning and improvement, I continually refine my expertise and adapt to evolving industry needs. By leveraging my passion for process optimization and collaboration, I deliver high-impact initiatives that drive business success."
+    "text": "As a seasoned Chief Financial Officer with 9 years of experience driving strategic budget management, I excel at navigating complex financial landscapes and identifying opportunities for growth. My passion for staying at the forefront of industry trends and market shifts enables me to develop data-driven insights that inform informed business decisions. I thrive in environments where no two days are the same, and I'm committed to staying adaptable and innovative in the face of ever-changing financial landscapes."
+  },
+  {
+    "id": "EMP-023",
+    "name": "Rahul Bose",
+    "department": "Sales",
+    "title": "Account Executive",
+    "archetype": "social",
+    "text": "I've worked with visionary leaders and their teams for 18 years, driving business growth through strategic partnerships and innovative solutions that resonate with key decision-makers. My expertise spans the complexities of enterprise sales, from needs assessment to long-term relationship development. I excel at building trust, fostering collaborative environments, and delivering results that exceed expectations. By staying attuned to the ever-changing landscape, I help organizations thrive in an increasingly fast-paced market."
+  },
+  {
+    "id": "EMP-022",
+    "name": "Deepak Mishra",
+    "department": "Sales",
+    "title": "Account Executive",
+    "archetype": "social",
+    "text": "Results-driven Account Executive with 18 years of experience in enterprise sales, skilled at forging strong relationships with C-level executives and driving revenue growth through strategic partnerships and collaborative solutions. Adept at navigating complex sales environments and identifying key opportunities for business expansion. Proven track record of developing and executing sales strategies that exceed client expectations and yield long-term success. I thrive in fast-paced environments where creativity, adaptability, and genuine connection with clients drive success."
+  },
+  {
+    "id": "EMP-028",
+    "name": "Amit Pandey",
+    "department": "Operations",
+    "title": "Supply Chain Analyst",
+    "archetype": "methodical",
+    "text": "With 18 years of expertise in supply chain optimization, I leverage a meticulous approach to drive data-driven decision-making, ensuring seamless integration of processes and maximum efficiency across global networks. My analytical prowess enables me to identify areas of improvement, develop strategic solutions, and implement cost-saving initiatives that deliver tangible results. Proficient in navigating complex supply chain dynamics, I thrive in fast-paced environments where precision and adaptability are key."
+  },
+  {
+    "id": "EMP-016",
+    "name": "Rahul Patel",
+    "department": "Legal",
+    "title": "Legal Counsel",
+    "archetype": "social",
+    "text": "As a seasoned Legal Counsel with 7 years of experience driving regulatory affairs, I've developed a unique ability to connect complex regulatory landscapes to business objectives, fostering collaborative relationships with cross-functional teams and stakeholders to achieve strategic growth and compliance. My expertise lies in navigating the intricate balance between regulatory requirements and innovative business solutions, leveraging my knowledge to guide organizations through transformation and growth. I am committed to providing strategic guidance and support to drive results-oriented decisions, while maintaining a deep understanding of the broader regulatory ecosystem. Through my work, I strive to unlock opportunities for growth and success in a rapidly evolving regulatory environment."
+  },
+  {
+    "id": "EMP-012",
+    "name": "Aditya Reddy",
+    "department": "Engineering",
+    "title": "Software Engineer",
+    "archetype": "social",
+    "text": "As a seasoned Software Engineer with 8 years of experience driving innovation in collaborative and agile environments, I leverage my technical expertise to deliver solutions that not only meet but exceed customer expectations. I thrive in dynamic teams where open communication and creative problem-solving foster a culture of growth and continuous improvement. My passion lies in merging technical skills with interpersonal connections to drive software development forward. Through my work, I aim to empower teams and organizations to achieve their full potential."
+  },
+  {
+    "id": "EMP-013",
+    "name": "Ravi Iyer",
+    "department": "Engineering",
+    "title": "DevOps Engineer",
+    "archetype": "social",
+    "text": "Results-driven DevOps Engineer with 9 years of experience driving collaboration and innovation across cross-functional teams to deliver high-impact software solutions. I excel at fostering a culture of open communication, empowering team members to take ownership and share knowledge to drive excellence. With a strong technical foundation and passion for process improvement, I design and implement scalable infrastructure and automation solutions to meet business needs and exceed customer expectations. Through my work, I strive to create meaningful connections and synergies that elevate the entire organization."
+  },
+  {
+    "id": "EMP-019",
+    "name": "Neha Pillai",
+    "department": "Legal",
+    "title": "Data Protection Lead",
+    "archetype": "curious",
+    "text": "As a seasoned Data Protection Lead with 4 years of experience, I excel in navigating the complexities of data privacy law, driving compliance initiatives, and fostering a culture of transparency within organizations. My passion lies in staying at the forefront of evolving regulations and industry best practices, allowing me to proactively mitigate risks and ensure seamless data management. I'm dedicated to collaborating with cross-functional teams to develop innovative solutions that balance business objectives with the strictest data protection standards. I thrive in environments that challenge me to continually question and refine processes."
+  },
+  {
+    "id": "EMP-014",
+    "name": "Manish Joshi",
+    "department": "Engineering",
+    "title": "Solutions Architect",
+    "archetype": "curious",
+    "text": "As a seasoned Solutions Architect with 9 years of experience in systems architecture, I thrive on the intersection of technology and business, continuously seeking opportunities to drive innovation and improvement. I excel at navigating complex technical landscapes, fostering collaboration, and developing tailored solutions that meet the unique needs of my clients. My passion for uncovering new ideas and exploring diverse perspectives drives me to stay at the forefront of industry trends and advancements. By combining technical expertise with a business-focused mindset, I deliver strategic solutions that exceed expectations and drive meaningful impact."
+  },
+  {
+    "id": "EMP-004",
+    "name": "Deepak Verma",
+    "department": "Finance",
+    "title": "CFO",
+    "archetype": "social",
+    "text": "As a seasoned finance leader with 6 years of experience in auditing, I excel at forging strong relationships with stakeholders to drive strategic growth and informed decision-making. My unique blend of analytical rigor and interpersonal acumen enables me to distill complex financial insights into actionable advice, empowering organizations to achieve their full potential. With a proven track record of delivering results-driven financial solutions, I thrive in collaborative environments where collaboration, trust, and open communication are paramount. By leveraging my technical expertise and genuine passion for people, I help organizations unlock new opportunities and achieve sustainable success."
   }
 ]

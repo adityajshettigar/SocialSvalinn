@@ -159,7 +159,7 @@ def score_organization(profiles: list) -> list:
         profile["susceptibility_scores"] = scaled_scores
         profile["risk_tiers"] = {p: classify_risk(s) for p, s in scaled_scores.items()}
         profile["top_vulnerabilities"] = get_top_vulnerabilities(scaled_scores)
-        profile["overall_risk_score"] = round(np.mean(list(scaled_scores.values())), 4)
+        profile["overall_risk_score"] = round(max(scaled_scores.values()), 4)
 
     return profiles
 

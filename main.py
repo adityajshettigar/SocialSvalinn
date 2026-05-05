@@ -38,11 +38,10 @@ from visualization.visualizer import (
 
 def print_banner():
     banner = """
-╔══════════════════════════════════════════════════════════════════╗
+╔═══════════════════════════════════════════════════════════════════╗
 ║   Behavioral NLP Framework for Social Engineering Susceptibility  ║
-║   Psycholinguistic Cognitive Vulnerability Modeling               ║
-║                                                                   ║
-╚══════════════════════════════════════════════════════════════════╝
+║        Psycholinguistic Cognitive Vulnerability Modeling          ║
+╚═══════════════════════════════════════════════════════════════════╝
     """
     print(banner)
 
