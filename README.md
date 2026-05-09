@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/adityajshettigar/SocialSvalinn)
 
-> **SocialSvalinn** bridges the gap between psycholinguistics and defensive cybersecurity. Instead of reacting to phishing clicks, this framework proactively maps human attack surfaces by analyzing public text, inferring Big Five (OCEAN) personality traits, and calculating target susceptibility to Cialdini's Six Principles of Persuasion.
+**SocialSvalinn** bridges the gap between psycholinguistics and defensive cybersecurity. Instead of reacting to phishing clicks, this framework proactively maps human attack surfaces by analyzing public text, inferring Big Five (OCEAN) personality traits, and calculating target susceptibility to Cialdini's Six Principles of Persuasion.
 
 ---
 
